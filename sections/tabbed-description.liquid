@@ -1,0 +1,193 @@
+{% comment %}
+  This is a Shopify theme section called "Horizontal Tabs Product Description".
+  It displays a section with horizontal tabs for different product descriptions.
+{% endcomment %}
+<div class="page-width">
+  <section class="horizontal-tabs-description">
+    <div class="container">
+      <div class="tab-container">
+        <ul class="tab-navigation">
+          {% for block in section.blocks %}
+            <li class="tab-item">
+              <a href="#{{ block.id }}">{{ block.settings.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="tab-content">
+          {% for block in section.blocks %}
+            <div id="{{ block.id }}" class="tab-pane">
+              {% if block.type == 'description' %}
+                {{ product.description }}
+              {% else %}
+                {{ block.settings.content }}
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var tabs = document.querySelectorAll('.tab-item a');
+      tabs.forEach(function(tab) {
+          tab.addEventListener('click', function(event) {
+              event.preventDefault();
+              var target = this.getAttribute('href').substring(1);
+              var tabPanes = document.querySelectorAll('.tab-pane');
+              var activeTab = document.getElementById(target);
+
+              tabs.forEach(function(tab) {
+                  tab.classList.remove('active');
+              });
+
+              tabPanes.forEach(function(pane) {
+                  pane.style.display = 'none';
+              });
+
+              this.classList.add('active');
+              activeTab.style.display = 'block';
+          });
+      });
+  });
+</script>
+<style>
+   .horizontal-tabs-description {
+        width: 100%;
+    }
+
+    .tab-container {
+        overflow: hidden;
+    }
+
+    .tab-navigation {
+      display:flex;
+        list-style: none;
+          width: fit-content;
+      border: 1px solid  #910f3f;
+      border-bottom: 0;
+      border-radius: 5px 5px 0 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tab-item {
+        display: inline-block;
+       padding: 15px;
+        background-color: #f2efdd;
+        color: #555;
+        line-height: 1;
+        border-radius: 5px 5px 0 0;
+        transition: all 0.3s;
+    }
+
+    .tab-item a {
+      text-decoration: none;
+      color: #910f3f;
+    }
+    .tab-item a.active,.tab-item a:hover {
+        border-bottom: 2px solid #4CAF50;
+        color: #4CAF50;
+    }
+
+    .tab-content {
+        margin-top: -2px;
+        clear: both;
+        border: 1px solid #910f3f;
+        padding: 20px;
+          max-height: 400px;
+      overflow-y: scroll;
+       border-radius: 0 0 5px 5px;
+    }
+
+    .tab-pane {
+        display: none;
+    }
+
+    .tab-pane:first-child {
+        display: block;
+    }
+
+    @media screen and (max-width: 480px) {
+      .tab-navigation {
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        border-bottom: none;
+      }
+      .tab-item {
+        display:block;
+        width:100%;
+        margin-right: 0;
+        border-bottom:1px solid #000;
+      }
+
+      .tab-content {
+        flex:2;
+          margin-top:0px !important;
+          border-top: none;
+          padding-top: 0;
+      }
+
+      .tab-pane {
+          display: block;
+      }
+      .tab-pane > p {
+          margin:0;
+      }
+  }
+</style>
+{% schema %}
+{
+  "name": "Product Description",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tab Title",
+          "default": "Tab Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Tab Content"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "description",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tab Title",
+          "default": "Tab Title"
+        },
+        {
+          "type": "html",
+          "id": "content",
+          "label": "Tab Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Description",
+      "category": "Products"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}

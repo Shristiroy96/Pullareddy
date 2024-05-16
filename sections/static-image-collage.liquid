@@ -1,0 +1,110 @@
+{%- comment -%}
+  This is a Shopify section named "Grid Collage".
+  It will display a collage of images with different sizes arranged in a grid.
+{%- endcomment -%}
+
+<style>
+      /* Basic styling */
+      .grid-collage {
+        display: grid;
+        grid-template-columns: 4fr 6fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .grid-collage img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+  .column-2-img .image-container{
+    max-height:200px;
+  }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+
+      /* Responsive styles */
+      @media screen and (min-width: 769px) {
+
+      }
+      @media screen and (max-width: 480px) {
+        .grid-collage {
+          grid-template-columns: 1fr;
+        }
+      }
+</style>
+<div class="page-width">
+  <div class="">
+    <div class="grid-collage collage">
+      <div class="image-container column-1-img">
+        <img src="{{ section.settings.image1 | img_url:'master' }}" alt="Image 1">
+      </div>
+      <div class="column-2-img">
+        <div class="image-container tall">
+          <img src="{{ section.settings.image2 | img_url:'master' }}" alt="Image 2">
+        </div>
+        <div class="image-container wide">
+          <img src="{{ section.settings.image3 | img_url:'master' }}" alt="Image 3">
+        </div>
+      </div>
+
+      <div class="image-container column-3-img">
+        <img src="{{ section.settings.image4 | img_url:'master' }}" alt="Image 4">
+      </div>
+    </div>
+
+    <!-- Add more images as needed -->
+  </div>
+</div>
+{%- schema -%}
+{
+  "name": "Grid Collage",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1",
+      "info": "Select the first image for the collage."
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image 2",
+      "info": "Select the second image for the collage."
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image 3",
+      "info": "Select the third image for the collage."
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "Image 4",
+      "info": "Select the fourth image for the collage."
+    }
+  ],
+  "presets": [
+    {
+      "category": "Images",
+      "name": "Grid Collage",
+      "settings": {
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": ""
+      }
+    }
+  ]
+}
+{%- endschema -%}

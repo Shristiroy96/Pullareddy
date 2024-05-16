@@ -1,0 +1,429 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign video_id = section.settings.video.id | default: section.settings.video_url.id
+  assign video_alt = section.settings.video.alt | default: section.settings.description
+  assign alt = 'sections.video.load_video' | t: description: video_alt | escape
+  assign poster = section.settings.video.preview_image | default: section.settings.cover_image
+
+  if section.settings.video != null
+    assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+    if ratio_diff < 0.01 and ratio_diff > 0
+      assign fix_ratio = true
+    endif
+  endif
+-%}
+
+{%- capture sizes -%}
+  {% if section.settings.full_width -%}
+    100vw
+  {%- else -%}
+    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px)
+    calc(100vw - 10rem), 100vw
+  {%- endif %}
+{%- endcapture -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="icon-vedio-section video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+    <div
+      {% if section.settings.full_width %}
+        class="page-width"
+      {% endif %}
+    >
+      {%- unless section.settings.heading == blank -%}
+        <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+        </div>
+      {%- endunless -%}
+    </div>
+    <noscript>
+      <div
+        class="video-section__media"
+        {% if poster != null %}
+          style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+        {% endif %}
+      >
+        {%- if section.settings.video == null and section.settings.video_url != null -%}
+          <a
+            href="{{ section.settings.video_url }}"
+            class="video-section__poster media media--transparent{% if poster == null %} video-section__placeholder{% endif %}"
+          >
+            {%- if poster != null -%}
+              {{
+                poster
+                | image_url: width: 3840
+                | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+              }}
+            {%- else -%}
+              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+            {%- endif -%}
+          </a>
+        {%- else -%}
+          {{
+            section.settings.video
+            | video_tag: image_size: '1100x', loop: section.settings.enable_video_looping, controls: true, muted: false
+          }}
+        {%- endif -%}
+      </div>
+    </noscript>
+    <deferred-media
+      class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      data-media-id="{{ video_id }}"
+    >
+      <button
+        id="Deferred-Poster-Modal-{{ video_id }}"
+        class="video-section__poster media deferred-media__poster media--landscape"
+        type="button"
+        aria-label="{{ alt }}"
+      >
+        {%- if poster != null -%}
+          {{
+            poster
+            | image_url: width: 3840
+            | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+          }}
+        {%- else -%}
+          {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {%- endif -%}
+        <span class="deferred-media__poster-button motion-reduce">
+          {%- render 'icon-play' -%}
+        </span>
+      </button>
+      <template>
+        {%- if section.settings.video == null and section.settings.video_url != null -%}
+          {%- liquid
+            assign loop = ''
+            if section.settings.enable_video_looping
+              assign loop = '&loop=1&playlist=' | append: video_id
+            endif
+          -%}
+          {%- if section.settings.video_url.type == 'youtube' -%}
+            <iframe
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+              class="js-youtube"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- else -%}
+            <iframe
+              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+              class="js-vimeo"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- endif -%}
+        {%- else -%}
+          {{
+            section.settings.video
+            | video_tag:
+              image_size: '1100x',
+              autoplay: true,
+              loop: section.settings.enable_video_looping,
+              controls: true,
+              muted: false
+          }}
+        {%- endif -%}
+      </template>
+    </deferred-media>
+    <div class="right-section">
+      <div class="feature-icons">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings['sub-description'] }}</p>
+
+        <div class="icon-wrapper">
+          <div class="icon">
+            <img src="{{ section.settings.icon1 | img_url:'50px' }}" alt="Icon 1">
+            <h3>{{ section.settings.title1 }}</h3>
+            <p>{{ section.settings.subtitle1 }}</p>
+          </div>
+          <div class="icon">
+            <img src="{{ section.settings.icon2 | img_url:'50px' }}" alt="Icon 2">
+            <h3>{{ section.settings.title2 }}</h3>
+            <p>{{ section.settings.subtitle2 }}</p>
+          </div>
+          <div class="icon">
+            <img src="{{ section.settings.icon3 | img_url:'50px' }}" alt="Icon 3">
+            <h3>{{ section.settings.title3 }}</h3>
+            <p>{{ section.settings.subtitle3 }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+      /* Basic styling */
+    .icon-wrapper{
+      display:flex;
+    }
+  @media(min-width:768px){
+      .icon-vedio-section > div{
+      flex:1;
+    }
+    deferred-media{
+      flex:2;
+    }
+       .icon-vedio-section{
+      display:flex;
+         gap:20px;
+    }
+  }
+      .feature-icons {
+        text-align: center;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+        height: 100%;
+            display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+      .feature-icons h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      .feature-icons p {
+        font-size: 1em;
+        margin-bottom: 20px;
+      }
+     .right-section .feature-icons .icon {
+        display: inline-block;
+        width: calc(33.33% - 20px);
+        margin: 0 10px;
+       line-height:1;
+       text-transform:capitalize;
+      }
+     .right-section .feature-icons .icon img {
+        margin-bottom: 10px;
+      }
+    .right-section .feature-icons .icon h3 {
+        font-size: 0.9em;
+        margin:0!important;
+       text-transform:capitalize;
+      }
+      .feature-icons .icon p {
+        font-size: 0.9em;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 480px) {
+      .right-section  .feature-icons .icon {
+          width: calc(100% - 20px);
+        }
+      }
+</style>
+{% schema %}
+{
+  "name": "t:sections.video.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Video",
+      "label": "t:sections.video.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "label": "t:sections.video.settings.enable_video_looping.label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.video.settings.header__1.content"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "t:sections.video.settings.video.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.video.settings.header__2.content"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.video.settings.paragraph.content"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.video.settings.video_url.label",
+      "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "t:sections.video.settings.cover_image.label"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "t:sections.video.settings.description.label",
+      "info": "t:sections.video.settings.description.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.video.settings.header__3.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.video.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+      {
+        "type": "header",
+        "content": "Icons Section"
+      },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Our Features"
+      },
+      {
+        "type": "textarea",
+        "id": "sub-description",
+        "label": "Description",
+        "default": "Here's a brief description of our features."
+      },
+      {
+        "type": "image_picker",
+        "id": "icon1",
+        "label": "Icon 1",
+        "info": "Select an icon for the first feature."
+      },
+      {
+        "type": "text",
+        "id": "title1",
+        "label": "Title 1",
+        "default": "Feature 1"
+      },
+      {
+        "type": "text",
+        "id": "subtitle1",
+        "label": "Subtitle 1",
+        "default": "Description of feature 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon2",
+        "label": "Icon 2",
+        "info": "Select an icon for the second feature."
+      },
+      {
+        "type": "text",
+        "id": "title2",
+        "label": "Title 2",
+        "default": "Feature 2"
+      },
+      {
+        "type": "text",
+        "id": "subtitle2",
+        "label": "Subtitle 2",
+        "default": "Description of feature 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon3",
+        "label": "Icon 3",
+        "info": "Select an icon for the third feature."
+      },
+      {
+        "type": "text",
+        "id": "title3",
+        "label": "Title 3",
+        "default": "Feature 3"
+      },
+      {
+        "type": "text",
+        "id": "subtitle3",
+        "label": "Subtitle 3",
+        "default": "Description of feature 3"
+      }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.video.presets.name"
+    }
+  ]
+}
+{% endschema %}
