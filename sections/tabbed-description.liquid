@@ -6,14 +6,17 @@
   <section class="horizontal-tabs-description">
     <div class="container">
       <div class="tab-container">
-        <ul class="tab-navigation">
+      <div class="ribbin-bg">
+        <ul class="tab-navigation page-width">
+      
           {% for block in section.blocks %}
             <li class="tab-item">
               <a href="#{{ block.id }}">{{ block.settings.title }}</a>
             </li>
           {% endfor %}
         </ul>
-        <div class="tab-content">
+      </div>
+        <div class="tab-content page-width">
           {% for block in section.blocks %}
             <div id="{{ block.id }}" class="tab-pane">
               {% if block.type == 'description' %}
