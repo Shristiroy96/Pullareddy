@@ -2,11 +2,11 @@
   This is a Shopify theme section called "Horizontal Tabs Product Description".
   It displays a section with horizontal tabs for different product descriptions.
 {% endcomment %}
-<div class="color-scheme-4">
+<div class="">
   <section class="horizontal-tabs-description">
     <div class="container">
       <div class="tab-container">
-      <div class="ribbin-bg">
+      <div class="color-scheme-4 ribbin-bg">
         <ul class="tab-navigation page-width">
       
           {% for block in section.blocks %}
@@ -81,13 +81,9 @@ background:var(--gradient-background);
 
     .tab-item a {
       text-decoration: none;
-      color: #910f3f;
+      color: #fff;
     }
-    .tab-item a.active,.tab-item a:hover {
-        border-bottom: 2px solid #4CAF50;
-        color: #4CAF50;
-    }
-
+  
     .tab-content {
         clear: both;
         padding: 20px;
