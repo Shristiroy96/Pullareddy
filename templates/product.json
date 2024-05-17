@@ -45,7 +45,7 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "horizontal",
-            "icon_1": "heart",
+            "icon_1": "none",
             "image_1": "{{ product.metafields.custom.product_details_badges_.value.icon_1.value }}",
             "heading_1": "{{ product.metafields.custom.product_details_badges_.value.heading_1.value }}",
             "icon_2": "return",
