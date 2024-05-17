@@ -6,39 +6,36 @@
   <section class="horizontal-tabs-description">
     <div class="container">
       <div class="tab-container">
-      <div class="color-scheme-4 ribbin-bg">
-        <ul class="tab-navigation page-width">
-      
-          {% for block in section.blocks %}
-            <li class="tab-item">
-              <a href="#{{ block.id }}">{{ block.settings.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+        <div class="color-scheme-4 ribbin-bg">
+          <ul class="tab-navigation page-width">
+            {% for block in section.blocks %}
+              <li class="tab-item">
+                <a href="#{{ block.id }}">{{ block.settings.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
         <div class="tab-content page-width">
           {% for block in section.blocks %}
             <div id="{{ block.id }}" class="tab-pane">
               {% if block.type == 'description' %}
                 {{ product.description }}
-                {% elsif block.type == 'benefits'  %}
-                  <h3>{{block.settings.content-title}}</h3>
-                  <span>{{block.settings.content-sub-title}}</span>
-                  <div class="flex">
+              {% elsif block.type == 'benefits' %}
+                <h3>{{ block.settings['content-title'] }}</h3>
+                <span>{{ block.settings['content-sub-title'] }}</span>
+                <div class="flex">
                   {%- for i in (1..4) -%}
-                  <div>
-                  {%- assign block_icon_id = 'icon-' | append: i  -%}
-                  {%- assign block_text_id = 'icon-' | append: i | append :'-text' -%}
-                  {%- assign block_icon = block.settings[block_icon] | img_url:'100x' -%}
-                  {%- assign block_text = block.settings[block_text] -%}
+                    <div>
+                      {%- assign block_icon_id = 'icon-' | append: i -%}
+                      {%- assign block_text_id = 'icon-' | append: i | append: '-text' -%}
+                      {%- assign block_icon = block.settings[block_icon_id] | img_url: '100x' -%}
+                      {%- assign block_text = block.settings[block_text_id] -%}
 
-                  <img src="{{block_icon}}">
-                  <span>{{block_text}}</span>
-                  </div>
-                    
+                      <img src="{{block_icon}}">
+                      <span>{{ block_text }}</span>
+                    </div>
                   {%- endfor -%}
-
-                  </div>
+                </div>
               {% else %}
                 {{ block.settings.content }}
               {% endif %}
@@ -74,82 +71,82 @@
   });
 </script>
 <style>
-   .horizontal-tabs-description {
-        width: 100%;
-    }
-.ribbin-bg{
-background:var(--gradient-background);
-}
-    .tab-container {
-        overflow: hidden;
-    }
-
-    .tab-navigation {
-      display:flex;
-        list-style: none;
-        padding: 0;
-    }
-
-    .tab-item {
-        display: inline-block;
-        padding: 15px;
-        line-height: 1;
-        transition: all 0.3s;
-    }
-
-    .tab-item a {
-      text-decoration: none;
-      color: #fff;
-    }
-    .tab-item a.active,.tab-item a:hover {
-      
-       border-bottom:1px solid #fff;
-    }
-
-    .tab-content {
-        clear: both;
-        padding: 20px;
-          max-height: 400px;
-      overflow-y: scroll;
-    }
-
-    .tab-pane {
-        display: none;
-    }
-
-    .tab-pane:first-child {
-        display: block;
-    }
-
-    @media screen and (max-width: 480px) {
-      .tab-navigation {
-        display: flex;
-        flex:1;
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-        border-bottom: none;
+     .horizontal-tabs-description {
+          width: 100%;
       }
+  .ribbin-bg{
+  background:var(--gradient-background);
+  }
+      .tab-container {
+          overflow: hidden;
+      }
+
+      .tab-navigation {
+        display:flex;
+          list-style: none;
+          padding: 0;
+      }
+
       .tab-item {
-        display:block;
-        width:100%;
-        margin-right: 0;
-        border-bottom:1px solid #000;
+          display: inline-block;
+          padding: 15px;
+          line-height: 1;
+          transition: all 0.3s;
+      }
+
+      .tab-item a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .tab-item a.active,.tab-item a:hover {
+
+         border-bottom:1px solid #fff;
       }
 
       .tab-content {
-        flex:2;
-          margin-top:0px !important;
-          padding-top: 0;
+          clear: both;
+          padding: 20px;
+            max-height: 400px;
+        overflow-y: scroll;
       }
 
       .tab-pane {
+          display: none;
+      }
+
+      .tab-pane:first-child {
           display: block;
       }
-      .tab-pane > p {
-          margin:0;
-      }
-  }
+
+      @media screen and (max-width: 480px) {
+        .tab-navigation {
+          display: flex;
+          flex:1;
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start;
+          border-bottom: none;
+        }
+        .tab-item {
+          display:block;
+          width:100%;
+          margin-right: 0;
+          border-bottom:1px solid #000;
+        }
+
+        .tab-content {
+          flex:2;
+            margin-top:0px !important;
+            padding-top: 0;
+        }
+
+        .tab-pane {
+            display: block;
+        }
+        .tab-pane > p {
+            margin:0;
+        }
+    }
 </style>
 {% schema %}
 {
