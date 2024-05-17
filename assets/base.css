@@ -3520,8 +3520,8 @@ details-disclosure > details {
 
 /* custome style */
 .icon-with-text__item img{
-width: 80px;
-height: 80px;
+width: 80px !important;
+height: 80px !important;
 }
 
 /* custome style */
