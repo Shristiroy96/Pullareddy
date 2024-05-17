@@ -21,6 +21,21 @@
             <div id="{{ block.id }}" class="tab-pane">
               {% if block.type == 'description' %}
                 {{ product.description }}
+                {% elsif block.type == 'benefits'  %}
+                  <h3></h3>
+                  <span></span>
+                  <div class="flex">
+                  {%- for i in 1..4 -%}
+                  <div>
+                  {%- assign block_icon_id = 'icon-{{i}}' -%}
+                  {%- assign block_text_id = 'icon-{{i}}-text' -%}
+                  <img src="{{block.settings[block_id] | img_url:'100x'}}">
+                  <span>{{block.settings[block_text_id] }}</span>
+                  </div>
+                    
+                  {%- endfor -%}
+
+                  </div>
               {% else %}
                 {{ block.settings.content }}
               {% endif %}
@@ -170,6 +185,69 @@ background:var(--gradient-background);
           "id": "content",
           "label": "Tab Content"
         }
+      ]
+    },
+    {
+      "type": "benefits",
+      "name": "benefits",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tab Title",
+          "default": "Tab Title"
+        },
+        {
+          "type": "text",
+          "id": "content-title",
+          "label": "Tab Content Title"
+        },
+        {
+          "type": "text",
+          "id": "content-sub-title",
+          "label": "Tab Content Sub Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon-1",
+          "label": "icon 1"
+        },
+        {
+          "type": "text",
+          "id": "icon-1-text",
+          "label": "Icon 1 Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon-2",
+          "label": "icon 2"
+        },
+        {
+          "type": "text",
+          "id": "icon-2-text",
+          "label": "Icon 2 Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon-3",
+          "label": "icon 3"
+        },
+        {
+          "type": "text",
+          "id": "icon-2-text",
+          "label": "Icon 2 Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon-4",
+          "label": "icon 4"
+        },
+        {
+          "type": "text",
+          "id": "icon-4-text",
+          "label": "Icon 4 Text"
+        }
+
       ]
     }
   ],
