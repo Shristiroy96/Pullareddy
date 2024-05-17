@@ -25,13 +25,13 @@
                 <span>{{ block.settings['content-sub-title'] }}</span>
                 <div class="flex">
                   {%- for i in (1..4) -%}
-                    <div>
+                    <div class="icon-wrapper">
                       {%- assign block_icon_id = 'icon-' | append: i -%}
                       {%- assign block_text_id = 'icon-' | append: i | append: '-text' -%}
                       {%- assign block_icon = block.settings[block_icon_id] | img_url: '100x' -%}
                       {%- assign block_text = block.settings[block_text_id] -%}
 
-                      <img src="{{block_icon}}">
+                     <div class="img-wrapper"> <img src="{{block_icon}}"></div>
                       <span>{{ block_text }}</span>
                     </div>
                   {%- endfor -%}
@@ -71,6 +71,12 @@
   });
 </script>
 <style>
+.icon-wrapper{
+  display:flex;
+}
+.icon-wrapper img{
+  max-width:100%;
+}
      .horizontal-tabs-description {
           width: 100%;
       }
