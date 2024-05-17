@@ -141,7 +141,14 @@
 .tab-pane:first-child {
     display: block;
 }
-
+@media (max-width:768px){
+.benefits-container{
+  flex-wrap:wrap;
+}
+.icon-wrapper {
+    flex-basis: 50%;
+}
+}
 @media screen and (max-width: 480px) {
     .tab-navigation {
         display: flex;
