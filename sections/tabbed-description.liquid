@@ -17,13 +17,13 @@
         </div>
         <div class="tab-content page-width">
           {% for block in section.blocks %}
-            <div id="{{ block.id }}" class="tab-pane">
+            <div id="{{ block.id }}" class="tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
               {% if block.type == 'description' %}
                 {{ product.description }}
               {% elsif block.type == 'benefits' %}
                 <h3>{{ block.settings['content-title'] }}</h3>
                 <span>{{ block.settings['content-sub-title'] }}</span>
-                <div class="flex">
+                <div class="benefits-container">
                   {%- for i in (1..4) -%}
                     <div class="icon-wrapper">
                       {%- assign block_icon_id = 'icon-' | append: i -%}
@@ -71,88 +71,105 @@
   });
 </script>
 <style>
-.icon-wrapper{
-  display:flex;
+.tab-benefits {
+    text-align: center;
 }
-.icon-wrapper img{
-  max-width:100%;
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
-     .horizontal-tabs-description {
-          width: 100%;
-      }
-  .ribbin-bg{
-  background:var(--gradient-background);
-  }
-      .tab-container {
-          overflow: hidden;
-      }
 
-      .tab-navigation {
-        display:flex;
-          list-style: none;
-          padding: 0;
-      }
+.benefits-container {
+    display: flex;
+}
 
-      .tab-item {
-          display: inline-block;
-          padding: 15px;
-          line-height: 1;
-          transition: all 0.3s;
-      }
+.icon-wrapper img {
+    max-width: 100%;
+}
 
-      .tab-item a {
-        text-decoration: none;
-        color: #fff;
-      }
-      .tab-item a.active,.tab-item a:hover {
+.horizontal-tabs-description {
+    width: 100%;
+}
 
-         border-bottom:1px solid #fff;
-      }
+.ribbin-bg {
+    background: var(--gradient-background);
+}
 
-      .tab-content {
-          clear: both;
-          padding: 20px;
-            max-height: 400px;
-        overflow-y: scroll;
-      }
+.tab-container {
+    overflow: hidden;
+}
 
-      .tab-pane {
-          display: none;
-      }
+.tab-navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
 
-      .tab-pane:first-child {
-          display: block;
-      }
+.tab-item {
+    display: inline-block;
+    padding: 15px;
+    line-height: 1;
+    transition: all 0.3s;
+}
 
-      @media screen and (max-width: 480px) {
-        .tab-navigation {
-          display: flex;
-          flex:1;
-          flex-direction: column;
-          width: 100%;
-          align-items: flex-start;
-          border-bottom: none;
-        }
-        .tab-item {
-          display:block;
-          width:100%;
-          margin-right: 0;
-          border-bottom:1px solid #000;
-        }
+.tab-item a {
+    text-decoration: none;
+    color: #fff;
+}
 
-        .tab-content {
-          flex:2;
-            margin-top:0px !important;
-            padding-top: 0;
-        }
+.tab-item a.active,
+.tab-item a:hover {
+    border-bottom: 1px solid #fff;
+}
 
-        .tab-pane {
-            display: block;
-        }
-        .tab-pane > p {
-            margin:0;
-        }
+.tab-content {
+    clear: both;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane:first-child {
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .tab-navigation {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        border-bottom: none;
     }
+
+    .tab-item {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        border-bottom: 1px solid #000;
+    }
+
+    .tab-content {
+        flex: 2;
+        margin-top: 0 !important;
+        padding-top: 0;
+    }
+
+    .tab-pane {
+        display: block;
+    }
+
+    .tab-pane > p {
+        margin: 0;
+    }
+}
 </style>
 {% schema %}
 {
