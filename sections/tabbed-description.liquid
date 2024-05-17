@@ -22,15 +22,18 @@
               {% if block.type == 'description' %}
                 {{ product.description }}
                 {% elsif block.type == 'benefits'  %}
-                  <h3></h3>
-                  <span></span>
+                  <h3>{{block.settings.content-title}}</h3>
+                  <span>{{block.settings.content-sub-title}}</span>
                   <div class="flex">
                   {%- for i in (1..4) -%}
                   <div>
-                  {%- assign block_icon_id = 'icon-{{i}}' -%}
-                  {%- assign block_text_id = 'icon-{{i}}-text' -%}
-                  <img src="{{block.settings[block_id] | img_url:'100x'}}">
-                  <span>{{block.settings[block_text_id] }}</span>
+                  {%- assign block_icon_id = 'icon-'{{i}} -%}
+                  {%- assign block_text_id = 'icon-'{{i}}'-text' -%}
+                  {%- assign block_icon = block.settings[block_icon] | img_url:'100x' -%}
+                  {%- assign block_text = block.settings[block_text] -%}
+
+                  <img src="{{block_icon}}">
+                  <span>{{block_text}}</span>
                   </div>
                     
                   {%- endfor -%}
