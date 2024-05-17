@@ -6,9 +6,9 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
+            "text": "{{ product.metafields.custom.key_details.value }}",
             "content": "",
-            "text_style": "uppercase"
+            "text_style": "subtitle"
           }
         },
         "title": {
@@ -45,12 +45,15 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "horizontal",
-            "icon_1": "heart",
-            "heading_1": "Heading",
+            "icon_1": "none",
+            "image_1": "{{ product.metafields.custom.product_details_badges_.value.icon_1.value }}",
+            "heading_1": "{{ product.metafields.custom.product_details_badges_.value.heading_1.value }}",
             "icon_2": "return",
-            "heading_2": "Heading",
+            "image_2": "{{ product.metafields.custom.product_details_badges_.value.icon_2.value }}",
+            "heading_2": "{{ product.metafields.custom.product_details_badges_.value.heading_2.value }}",
             "icon_3": "truck",
-            "heading_3": "Heading"
+            "image_3": "{{ product.metafields.custom.product_details_badges_.value.icon_3.value }}",
+            "heading_3": "{{ product.metafields.custom.product_details_badges_.value.heading_3.value }}"
           }
         },
         "quantity_selector": {
