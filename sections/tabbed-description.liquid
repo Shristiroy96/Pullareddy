@@ -2,6 +2,7 @@
   This is a Shopify theme section called "Horizontal Tabs Product Description".
   It displays a section with horizontal tabs for different product descriptions.
 {% endcomment %}
+
 <div class="">
   <section class="horizontal-tabs-description">
     <div class="container">
@@ -10,7 +11,7 @@
           <ul class="tab-navigation page-width">
             {% for block in section.blocks %}
               <li class="tab-item">
-                <a href="#{{ block.id }}" class="active">{{ block.settings.title }}</a>
+                <a href="#{{ block.id }}" class="{% if forloop.first %}active{% endif %}">{{ block.settings.title }}</a>
               </li>
             {% endfor %}
           </ul>
