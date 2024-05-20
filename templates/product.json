@@ -347,7 +347,7 @@
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_one.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_one_title.value }}",
-            "description": ""
+            "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_one_desc1 | metafield_tag }}<\/p>"
           }
         },
         "feature_block_LtbTmg": {
@@ -355,7 +355,7 @@
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_two.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_two_title.value }}",
-            "description": "This is a short description of the feature."
+            "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_two_desc1 | metafield_tag }}<\/p>"
           }
         },
         "feature_block_TJnKeb": {
@@ -363,7 +363,7 @@
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_three.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_three_title.value }}",
-            "description": "This is a short description of the feature."
+            "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_three_desc1 | metafield_tag }}<\/p>"
           }
         }
       },
