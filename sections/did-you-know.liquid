@@ -78,7 +78,7 @@ height:40px;
     <div class="feature-blocks">
         {%- for block in section.blocks -%}
         <div class="feature-block">
-            <img src="{{ block.settings.icon | img_url:'40x40' }}" alt="{{ block.settings.title }}">
+            <img src="{{ block.settings.icon | img_url:'40x' }}" alt="{{ block.settings.title }}">
             <p>{{ block.settings.title }}</p>
             <p>{{ block.settings.description }}</p>
         </div>
