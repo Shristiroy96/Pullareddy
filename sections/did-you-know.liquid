@@ -31,14 +31,11 @@
   .did-you-know > div{
     overflow:auto;
   }
-.did-you-know .btn-title span{
+.did-you-know .btn-title button{
     display:inline-block;
     padding: 10px 30px;
     border-radius:30px;
     margin-top: 10px;
-    background:#fff;
-    color:#000;
-
 }
 .did-you-know .feature-block{
     display:flex;
@@ -78,7 +75,7 @@ height:{{section.settings.icon-size}}px;
     </span>
     </div>
     <div class="btn-title {{section.settings.alignment}}">
-    <span class="button">{{ section.settings.secendory-title }}</span>
+    <button class="button">{{ section.settings.secendory-title }}</button>
     </div>
     <div class="feature-blocks">
         {%- for block in section.blocks -%}
