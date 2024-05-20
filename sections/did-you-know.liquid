@@ -48,8 +48,8 @@
 }
 
 .did-you-know img{
-width:70px;
-height:70px;
+width:{{section.settings.icon-size}};
+height:{{section.settings.icon-size}};
 }
 .did-you-know .feature-blocks,
 .did-you-know .btn-title,
@@ -126,6 +126,15 @@ height:70px;
    "id": "alignment",
    "label": "Title alignment",
    "default": "center"
+},
+{
+    "type": "range",
+    "id": "icon-size",
+    "min": "25",
+    "max": "100",
+    "step": "5",
+    "unit": "px",
+    "label": "Icon Size"
 },
 
     {
