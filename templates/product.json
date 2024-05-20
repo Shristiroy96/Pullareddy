@@ -378,6 +378,7 @@
         "description": "{{ product.metafields.custom.did_you_know_.value.description.value }}",
         "secendory-title": "{{ product.metafields.custom.did_you_know_.value.secondory_title.value }}",
         "alignment": "center",
+        "icon-size": 70,
         "heading_size": "h1"
       }
     }
