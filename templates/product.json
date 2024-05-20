@@ -373,7 +373,7 @@
         "feature_block_TJnKeb"
       ],
       "settings": {
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "title": "Did you Know",
         "description": "{{ product.metafields.custom.did_you_know_.value.description.value }}",
         "secendory-title": "{{ product.metafields.custom.did_you_know_.value.secondory_title.value }}",
