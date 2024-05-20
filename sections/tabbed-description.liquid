@@ -10,7 +10,7 @@
           <ul class="tab-navigation page-width">
             {% for block in section.blocks %}
               <li class="tab-item">
-                <a href="#{{ block.id }}">{{ block.settings.title }}</a>
+                <a href="#{{ block.id }}" class="active">{{ block.settings.title }}</a>
               </li>
             {% endfor %}
           </ul>
