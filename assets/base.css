@@ -3528,4 +3528,7 @@ height: 80px !important;
   border-radius: 50%;
   background-color: #258a27;
 }
+.newsletter__wrapper{
+  border-bottom:1px solid #000 ;
+}
 /* custome style */
