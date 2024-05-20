@@ -1,0 +1,153 @@
+{%- comment -%}
+  This is a Shopify section named "Feature Blocks".
+  It will display a set of feature blocks with icons, titles, and short descriptions.
+{%- endcomment -%}
+<style>
+  /* Basic styling */
+  .feature-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .feature-block {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+  }
+  .feature-block img {
+    width: 80px;
+    height: 80px;
+  }
+  .feature-block h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin:0;
+  }
+  .feature-block p {
+    font-size: 0.9em;
+    line-height:1.3;
+    
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .feature-block {
+      width: calc(100% - 20px);
+    }
+  }
+</style>
+
+<div class="page-width">
+  <div>
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} {{ section.settings.alignment }}">
+      {{ section.settings.title }}
+    </h2>
+  </div>
+  <div class="section-short-desc">
+  <span>
+  {{ section.settings.description }}
+  </span>
+  </div>
+  <div class="btn-title">
+  <span>{{ section.settings.secendory-title }}</span>
+  </div>
+  <div class="feature-blocks">
+    {%- for block in section.blocks -%}
+      <div class="feature-block">
+        <img src="{{ block.settings.icon | img_url:'100x' }}" alt="{{ block.settings.title }}">
+        
+        <p>{{ block.settings.description }}</p>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{%- schema -%}
+{
+  "name": "Why Choose Us",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Why Choose Us"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Why Choose Us"
+    },
+    {
+      "type": "text",
+      "id": "secendory-title",
+      "label": "Secendory Title",
+      "default": "Why Choose Us"
+    },
+    {
+   "type": "text_alignment",
+   "id": "alignment",
+   "label": "Title alignment",
+   "default": "center"
+},
+
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_block",
+      "name": "Feature Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Select an icon for this feature."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "This is a short description of the feature."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Features",
+      "name": "Feature Blocks",
+      "settings": {
+        "title": "Our Features"
+      }
+    }
+  ]
+}
+{%- endschema -%}
