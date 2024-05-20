@@ -52,6 +52,12 @@
 width:40px;
 height:40px;
 }
+.did-you-know .feature-blocks,
+.did-you-know .btn-title,
+.did-you-know .section-short-desc{
+    max-width: 700px;
+    margin: auto;
+}
   /* Responsive styles */
   @media screen and (max-width: 768px) {
     .feature-block {
@@ -64,7 +70,7 @@ height:40px;
     <div class="page-width color-{{ section.settings.color_scheme }} gradient ">
     <div class="{{section.settings.alignment}}">
         <h2 class="title inline-richtext {{ section.settings.heading_size }} {{ section.settings.alignment }}">
-        {{ section.settings.title }}
+            {{ section.settings.title }}
         </h2>
     </div >
     <div class="section-short-desc {{section.settings.alignment}}">
