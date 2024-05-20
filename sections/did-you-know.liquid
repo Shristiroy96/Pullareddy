@@ -42,13 +42,13 @@
 </style>
 <div class="">
 
-    <div class="page-width color-{{ section.settings.color_scheme }} gradient">
-    <div>
+    <div class="page-width color-{{ section.settings.color_scheme }} gradient ">
+    <div class="{{section.settings.alignment}}">
         <h2 class="title inline-richtext {{ section.settings.heading_size }} {{ section.settings.alignment }}">
         {{ section.settings.title }}
         </h2>
-    </div>
-    <div class="section-short-desc">
+    </div >
+    <div class="section-short-desc {{section.settings.alignment}}">
     <span>
     {{ section.settings.description }}
     </span>
