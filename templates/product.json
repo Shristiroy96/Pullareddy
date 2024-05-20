@@ -345,21 +345,24 @@
         "feature_block_r9ba6d": {
           "type": "feature_block",
           "settings": {
-            "title": "",
-            "description": "This is a short description of the feature."
+            "icon": "{{ product.metafields.custom.did_you_know_.value.icon_one.value }}",
+            "title": "{{ product.metafields.custom.did_you_know_.value.icon_one_title.value }}",
+            "description": ""
           }
         },
         "feature_block_LtbTmg": {
           "type": "feature_block",
           "settings": {
-            "title": "Feature Title",
+            "icon": "{{ product.metafields.custom.did_you_know_.value.icon_two.value }}",
+            "title": "{{ product.metafields.custom.did_you_know_.value.icon_two_title.value }}",
             "description": "This is a short description of the feature."
           }
         },
         "feature_block_TJnKeb": {
           "type": "feature_block",
           "settings": {
-            "title": "Feature Title",
+            "icon": "{{ product.metafields.custom.did_you_know_.value.icon_three.value }}",
+            "title": "{{ product.metafields.custom.did_you_know_.value.icon_three_title.value }}",
             "description": "This is a short description of the feature."
           }
         }
@@ -371,8 +374,8 @@
       ],
       "settings": {
         "title": "Did you Know",
-        "description": "Why Choose Us",
-        "secendory-title": "Why Choose Us",
+        "description": "{{ product.metafields.custom.did_you_know_.value.description.value }}",
+        "secendory-title": "{{ product.metafields.custom.did_you_know_.value.secondory_title.value }}",
         "alignment": "center",
         "heading_size": "h1"
       }
