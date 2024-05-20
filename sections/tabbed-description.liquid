@@ -6,7 +6,7 @@
   <section class="horizontal-tabs-description">
     <div class="container">
       <div class="tab-container">
-        <div class="color-scheme-4 ribbin-bg">
+        <div class="color-{{ section.settings.color_scheme }} gradient">
           <ul class="tab-navigation page-width">
             {% for block in section.blocks %}
               <li class="tab-item">
@@ -96,10 +96,6 @@
     width: 100%;
 }
 
-.ribbin-bg {
-    background: var(--gradient-background);
-}
-
 .tab-container {
     overflow: hidden;
 }
@@ -182,7 +178,14 @@
 {% schema %}
 {
   "name": "Product Description",
-  "settings": [],
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-4"
+    }
+  ],
   "blocks": [
     {
       "type": "text",
