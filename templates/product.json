@@ -363,6 +363,7 @@
     },
     "static_image_collage_BkTEAD": {
       "type": "static-image-collage",
+      "disabled": true,
       "settings": {
         "image1": "shopify:\/\/shop_images\/sesame1.png",
         "image2": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati03.jpg",
