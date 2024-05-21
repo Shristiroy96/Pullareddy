@@ -225,7 +225,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "{{ product.metafields.custom.question_1.value }}",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>{{ product.metafields.custom.answer_1 | metafield_tag }}<\/p>",
             "page": ""
           }
@@ -234,7 +234,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "{{ product.metafields.custom.question_2.value }}",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>{{ product.metafields.custom.answer_2 | metafield_tag }}<\/p>",
             "page": ""
           }
@@ -243,7 +243,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "{{ product.metafields.custom.question_3.value }}",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>{{ product.metafields.custom.answer_3 | metafield_tag }}<\/p>",
             "page": ""
           }
@@ -252,7 +252,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "{{ product.metafields.custom.question_4.value }}",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>{{ product.metafields.custom.question_4.value }}<\/p>",
             "page": ""
           }
