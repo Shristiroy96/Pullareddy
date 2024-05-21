@@ -100,9 +100,19 @@ height:{{section.settings.icon-size}}px;
         {%- for block in section.blocks -%}
         {% assign img_uri = block.settings.icon | img_url:'40x' %}
         <div class="feature-block">
+        {% if img_uri != blank %}
+            
             <img src="{{ img_uri }}" alt="{{ block.settings.title }}">
+        {% endif %}
+        {% if block.settings.title != blank %}
+            
             <p>{{ block.settings.title }}</p>
-            <p>{{ block.settings.description }}</p>
+        {% endif %}
+        {% if block.settings.description != blank %}
+            
+           <p>{{ block.settings.description }}</p>
+        {% endif %}
+            
         </div>
         {%- endfor -%}
     </div>
