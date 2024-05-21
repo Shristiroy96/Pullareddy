@@ -80,6 +80,8 @@
                     open
                   {% endif %}
                 >
+                {%- if block.settings.heading != blank -%}
+                  
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h3 class="accordion__title inline-richtext h4">
@@ -87,6 +89,9 @@
                     </h3>
                     {% render 'icon-caret' %}
                   </summary>
+                {%- endif -%}
+                {% if block.settings.row_content != blank %}
+                  
                   <div
                     class="accordion__content rte"
                     id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
@@ -96,6 +101,7 @@
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
                   </div>
+                {% endif %}
                 </details>
               </div>
             {%- endfor -%}
