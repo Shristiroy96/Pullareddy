@@ -93,9 +93,12 @@ height:{{section.settings.icon-size}}px;
     {{ section.settings.description }}
     </span>
     </div>
-    <div class="btn-title {{section.settings.alignment}}">
-    <button class="button">{{ section.settings.secendory-title }}</button>
-    </div>
+    {% if section.settings.secendory-title != blank %}
+        
+        <div class="btn-title {{section.settings.alignment}}">
+        <button class="button">{{ section.settings.secendory-title }}</button>
+        </div>
+    {% endif %}
     <div class="feature-blocks">
         {%- for block in section.blocks -%}
         {% assign img_uri = block.settings.icon | img_url:'40x' %}
