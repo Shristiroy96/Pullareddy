@@ -82,7 +82,7 @@
     "media_shadow_vertical_offset": 0,
     "media_shadow_blur": 0,
     "popup_border_thickness": 0,
-    "popup_border_opacity": 100,
+    "popup_border_opacity": 45,
     "popup_corner_radius": 4,
     "popup_shadow_opacity": 60,
     "popup_shadow_horizontal_offset": 0,
