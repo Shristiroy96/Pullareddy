@@ -80,47 +80,50 @@ height:{{section.settings.icon-size}}px;
     }
   }
 </style>
-<div class="did-you-know section-{{ section.id }}-padding">
+{% if section.settings.secendory-title != blank %}
+    
+    <div class="did-you-know section-{{ section.id }}-padding">
 
-    <div class="page-width color-{{ section.settings.color_scheme }} gradient ">
-    <div class="{{section.settings.alignment}}">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }} {{ section.settings.alignment }}">
-            {{ section.settings.title }}
-        </h2>
-    </div >
-    <div class="section-short-desc {{section.settings.alignment}}">
-    <span class="">
-    {{ section.settings.description }}
-    </span>
-    </div>
-    {% if section.settings.secendory-title != blank %}
-        
-        <div class="btn-title {{section.settings.alignment}}">
-        <button class="button">{{ section.settings.secendory-title }}</button>
+        <div class="page-width color-{{ section.settings.color_scheme }} gradient ">
+        <div class="{{section.settings.alignment}}">
+            <h2 class="title inline-richtext {{ section.settings.heading_size }} {{ section.settings.alignment }}">
+                {{ section.settings.title }}
+            </h2>
+        </div >
+        <div class="section-short-desc {{section.settings.alignment}}">
+        <span class="">
+        {{ section.settings.description }}
+        </span>
         </div>
-    {% endif %}
-    <div class="feature-blocks">
-        {%- for block in section.blocks -%}
-        {% assign img_uri = block.settings.icon | img_url:'40x' %}
-        
-        <div class="feature-block">
-        {% if block.settings.icon != blank %}
-            <img src="{{ img_uri }}" alt="{{ block.settings.title }}">
-        {% endif %}
-        {% if block.settings.title != blank %}
+        {% if section.settings.secendory-title != blank %}
             
-            <p>{{ block.settings.title }}</p>
+            <div class="btn-title {{section.settings.alignment}}">
+            <button class="button">{{ section.settings.secendory-title }}</button>
+            </div>
         {% endif %}
-        {% if block.settings.description != blank %}
+        <div class="feature-blocks">
+            {%- for block in section.blocks -%}
+            {% assign img_uri = block.settings.icon | img_url:'40x' %}
             
-           <p>{{ block.settings.description }}</p>
-        {% endif %}
-            
+            <div class="feature-block">
+            {% if block.settings.icon != blank %}
+                <img src="{{ img_uri }}" alt="{{ block.settings.title }}">
+            {% endif %}
+            {% if block.settings.title != blank %}
+                
+                <p>{{ block.settings.title }}</p>
+            {% endif %}
+            {% if block.settings.description != blank %}
+                
+            <p>{{ block.settings.description }}</p>
+            {% endif %}
+                
+            </div>
+            {%- endfor -%}
         </div>
-        {%- endfor -%}
+        </div>
     </div>
-    </div>
-</div>
+{%- endif -%}
 
 {%- schema -%}
 {
