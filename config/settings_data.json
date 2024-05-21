@@ -3,7 +3,7 @@
     "logo": "shopify:\/\/shop_images\/Gavya-min.png",
     "logo_width": 90,
     "favicon": "shopify:\/\/shop_images\/Gavya-fevicon.png",
-    "type_header_font": "mariposa_sans_n4",
+    "type_header_font": "roboto_n4",
     "heading_scale": 120,
     "type_body_font": "archivo_n4",
     "body_scale": 100,
@@ -192,10 +192,10 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#ecd51c",
+          "background": "#5ecc62",
           "background_gradient": "",
           "text": "#3d081b",
-          "button": "#248a26",
+          "button": "#00ad45",
           "button_label": "#f9e547",
           "secondary_button_label": "#3d081b",
           "shadow": "#3d081b"
