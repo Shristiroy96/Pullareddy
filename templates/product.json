@@ -233,27 +233,27 @@
         "collapsible_row_HRkLaX": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "{{ product.metafields.custom.question_2.value }}",
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_2.value }}",
             "icon": "none",
-            "row_content": "<p>{{ product.metafields.custom.answer_2 | metafield_tag }}<\/p>",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_2.value }}<\/p>",
             "page": ""
           }
         },
         "collapsible_row_L9zznV": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "{{ product.metafields.custom.question_3.value }}",
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_3.value }}",
             "icon": "none",
-            "row_content": "<p>{{ product.metafields.custom.answer_3 | metafield_tag }}<\/p>",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_3.value }}<\/p>",
             "page": ""
           }
         },
         "collapsible_row_FMjnzd": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "{{ product.metafields.custom.question_4.value }}",
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_4.value }}",
             "icon": "none",
-            "row_content": "<p>{{ product.metafields.custom.question_4.value }}<\/p>",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_4.value }}<\/p>",
             "page": ""
           }
         }
