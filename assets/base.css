@@ -3531,7 +3531,7 @@ height: 80px !important;
 .newsletter__wrapper{
   border-bottom:1px solid #000 ;
 }
-.tab-content table *{
-  border: 0;
+.tab-content table *,.tab-content table{
+  border:0;
 }
 /* custome style */
