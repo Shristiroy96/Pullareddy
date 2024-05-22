@@ -21,7 +21,7 @@
             <div id="{{ block.id }}" class="tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
               {% if block.type == 'description' %}
                 {{ product.description }}
-              {% elsif block.type == 'benefits' %}
+              {% elsif block.type == 'benefits' and block.settings['content-title'] != blank %}
                 <h3>{{ block.settings['content-title'] }}</h3>
                 <span>{{ block.settings['content-sub-title'] }}</span>
                 <div class="benefits-container">
