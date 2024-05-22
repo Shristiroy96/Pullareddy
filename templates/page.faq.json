@@ -1,1 +1,156 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":36,"padding_bottom":0}},"collapsible_content_dqCrfn":{"type":"collapsible-content","blocks":{"collapsible_row_daAVNG":{"type":"collapsible_row","settings":{"heading":"How our cow ghee  is it made?","icon":"question_mark","row_content":"<p>It is made by simmering unsalted butter until the water content evaporates and the milk solids separate and are removed, leaving behind pure golden ghee.<\/p>","page":""}},"collapsible_row_wHCViA":{"type":"collapsible_row","settings":{"heading":"What are the health benefits of cow ghee","icon":"question_mark","row_content":"<ul><li>Cow ghee is rich in healthy fats, including medium-chain fatty acids, which can support weight management and provide sustained energy. It contains vitamins A, D, E, and K, which are essential for overall health. Additionally, cow ghee has a high smoke point, making it ideal for cooking at high temperatures without oxidizing or forming harmful compounds.<\/li><\/ul>","page":""}},"collapsible_row_zU7W79":{"type":"collapsible_row","settings":{"heading":"Is your cow ghee organic","icon":"question_mark","row_content":"<p>Yes, our cow ghee is sourced from organically raised cows and produced using traditional methods without the use of synthetic additives or pesticides. We are committed to providing high-quality, organic products to our customers.<\/p>","page":""}},"collapsible_row_hBQYYL":{"type":"collapsible_row","settings":{"heading":"How should I store cow ghee","icon":"question_mark","row_content":"<p>Cow ghee should be stored in a cool, dark place away from direct sunlight and heat sources. It does not require refrigeration and can be kept at room temperature. Make sure to use a clean, dry spoon to scoop out the ghee to prevent contamination<\/p>","page":""}},"collapsible_row_Pmbiay":{"type":"collapsible_row","settings":{"heading":"What is the shelf life of cow ghee","icon":"question_mark","row_content":"<p>Our cow ghee typically has a shelf life of 12-18 months when stored properly in an airtight container away from moisture and sunlight. However, it is recommended to consume it within six months of opening for the best flavor and quality.<\/p>","page":""}},"collapsible_row_Y3mW79":{"type":"collapsible_row","settings":{"heading":"What are the benefits of consuming honey","icon":"question_mark","row_content":"<p>Honey is a natural sweetener that offers numerous health benefits. It contains antioxidants and antibacterial properties that can support immune health and wound healing. Honey also provides quick energy, making it an excellent alternative to refined sugar in your diet.<\/p>","page":""}},"collapsible_row_aMkBXt":{"type":"collapsible_row","settings":{"heading":"Is your honey raw or processed","icon":"question_mark","row_content":"<p>We offer both raw and processed honey options to cater to our customers' preferences. Our raw honey is minimally processed and retains all the natural enzymes, vitamins, and minerals present in the honeycomb. Our processed honey undergoes gentle filtration to remove impurities while preserving its nutritional value and flavor.<\/p>","page":""}},"collapsible_row_iNTEnJ":{"type":"collapsible_row","settings":{"heading":"What is wood-pressed oil","icon":"question_mark","row_content":"<p>Wood-pressed oil, also known as cold-pressed or traditional oil, is extracted from seeds or nuts using wooden presses or traditional oil mills. This method involves crushing the seeds or nuts with a wooden press to extract the oil, without applying heat or chemicals, thus preserving the natural nutrients and flavor of the oil<\/p>","page":""}},"collapsible_row_iLHtzP":{"type":"collapsible_row","settings":{"heading":"What are the benefits of wood-pressed oil","icon":"question_mark","row_content":"<p>Wood-pressed oil retains more nutrients and flavor compared to oils extracted using modern methods involving high heat and chemical solvents. It contains essential fatty acids, vitamins, and antioxidants that promote heart health, improve digestion, and support overall well-being. Additionally, wood-pressed oil is free from harmful chemicals and additives commonly found in refined oils<\/p>","page":""}},"collapsible_row_8M9Kby":{"type":"collapsible_row","settings":{"heading":"Is wood-pressed oil healthier than refined oil","icon":"question_mark","row_content":"<p>Yes, wood-pressed oil is considered healthier than refined oil because it undergoes minimal processing and retains more of its natural nutrients and antioxidants. Refined oils, on the other hand, are often processed using high heat, chemicals, and solvents, which can degrade the oil's nutritional value and introduce harmful compounds<\/p>","page":""}},"collapsible_row_3VCWyR":{"type":"collapsible_row","settings":{"heading":"What types of seeds or nuts are used to produce wood-pressed oil","icon":"question_mark","row_content":"<p>Wood-pressed oil can be extracted from a variety of seeds and nuts, including sesame seeds, groundnuts (peanuts), coconut, mustard seeds, sunflower seeds, and almond. Each type of oil has its unique flavor profile and nutritional benefits<\/p>","page":""}},"collapsible_row_tr76GN":{"type":"collapsible_row","settings":{"heading":"Is wood-pressed oil suitable for cooking","icon":"question_mark","row_content":"<p>Yes, wood-pressed oil is suitable for cooking, frying, and baking due to its high smoke point and excellent flavor. It adds a rich, nutty taste to dishes and can enhance the overall culinary experience. However, it is recommended to use wood-pressed oil for low to medium heat cooking to preserve its nutritional value and flavor<\/p>","page":""}}},"block_order":["collapsible_row_daAVNG","collapsible_row_wHCViA","collapsible_row_zU7W79","collapsible_row_hBQYYL","collapsible_row_Pmbiay","collapsible_row_Y3mW79","collapsible_row_aMkBXt","collapsible_row_iNTEnJ","collapsible_row_iLHtzP","collapsible_row_8M9Kby","collapsible_row_3VCWyR","collapsible_row_tr76GN"],"settings":{"caption":"","heading":"","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"","container_color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":0,"padding_bottom":36}}},"order":["main","collapsible_content_dqCrfn"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_dqCrfn": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_daAVNG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How our cow ghee  is it made?",
+            "icon": "question_mark",
+            "row_content": "<p>It is made by simmering unsalted butter until the water content evaporates and the milk solids separate and are removed, leaving behind pure golden ghee.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wHCViA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the health benefits of cow ghee",
+            "icon": "question_mark",
+            "row_content": "<ul><li>Cow ghee is rich in healthy fats, including medium-chain fatty acids, which can support weight management and provide sustained energy. It contains vitamins A, D, E, and K, which are essential for overall health. Additionally, cow ghee has a high smoke point, making it ideal for cooking at high temperatures without oxidizing or forming harmful compounds.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zU7W79": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is your cow ghee organic",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, our cow ghee is sourced from organically raised cows and produced using traditional methods without the use of synthetic additives or pesticides. We are committed to providing high-quality, organic products to our customers.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hBQYYL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How should I store cow ghee",
+            "icon": "question_mark",
+            "row_content": "<p>Cow ghee should be stored in a cool, dark place away from direct sunlight and heat sources. It does not require refrigeration and can be kept at room temperature. Make sure to use a clean, dry spoon to scoop out the ghee to prevent contamination<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Pmbiay": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the shelf life of cow ghee",
+            "icon": "question_mark",
+            "row_content": "<p>Our cow ghee typically has a shelf life of 12-18 months when stored properly in an airtight container away from moisture and sunlight. However, it is recommended to consume it within six months of opening for the best flavor and quality.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Y3mW79": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the benefits of consuming honey",
+            "icon": "question_mark",
+            "row_content": "<p>Honey is a natural sweetener that offers numerous health benefits. It contains antioxidants and antibacterial properties that can support immune health and wound healing. Honey also provides quick energy, making it an excellent alternative to refined sugar in your diet.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aMkBXt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is your honey raw or processed",
+            "icon": "question_mark",
+            "row_content": "<p>We offer both raw and processed honey options to cater to our customers' preferences. Our raw honey is minimally processed and retains all the natural enzymes, vitamins, and minerals present in the honeycomb. Our processed honey undergoes gentle filtration to remove impurities while preserving its nutritional value and flavor.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iNTEnJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is wood-pressed oil",
+            "icon": "question_mark",
+            "row_content": "<p>Wood-pressed oil, also known as cold-pressed or traditional oil, is extracted from seeds or nuts using wooden presses or traditional oil mills. This method involves crushing the seeds or nuts with a wooden press to extract the oil, without applying heat or chemicals, thus preserving the natural nutrients and flavor of the oil<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iLHtzP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the benefits of wood-pressed oil",
+            "icon": "question_mark",
+            "row_content": "<p>Wood-pressed oil retains more nutrients and flavor compared to oils extracted using modern methods involving high heat and chemical solvents. It contains essential fatty acids, vitamins, and antioxidants that promote heart health, improve digestion, and support overall well-being. Additionally, wood-pressed oil is free from harmful chemicals and additives commonly found in refined oils<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8M9Kby": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is wood-pressed oil healthier than refined oil",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, wood-pressed oil is considered healthier than refined oil because it undergoes minimal processing and retains more of its natural nutrients and antioxidants. Refined oils, on the other hand, are often processed using high heat, chemicals, and solvents, which can degrade the oil's nutritional value and introduce harmful compounds<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3VCWyR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What types of seeds or nuts are used to produce wood-pressed oil",
+            "icon": "question_mark",
+            "row_content": "<p>Wood-pressed oil can be extracted from a variety of seeds and nuts, including sesame seeds, groundnuts (peanuts), coconut, mustard seeds, sunflower seeds, and almond. Each type of oil has its unique flavor profile and nutritional benefits<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tr76GN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is wood-pressed oil suitable for cooking",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, wood-pressed oil is suitable for cooking, frying, and baking due to its high smoke point and excellent flavor. It adds a rich, nutty taste to dishes and can enhance the overall culinary experience. However, it is recommended to use wood-pressed oil for low to medium heat cooking to preserve its nutritional value and flavor<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_daAVNG",
+        "collapsible_row_wHCViA",
+        "collapsible_row_zU7W79",
+        "collapsible_row_hBQYYL",
+        "collapsible_row_Pmbiay",
+        "collapsible_row_Y3mW79",
+        "collapsible_row_aMkBXt",
+        "collapsible_row_iNTEnJ",
+        "collapsible_row_iLHtzP",
+        "collapsible_row_8M9Kby",
+        "collapsible_row_3VCWyR",
+        "collapsible_row_tr76GN"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ'S",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_dqCrfn"
+  ]
+}
