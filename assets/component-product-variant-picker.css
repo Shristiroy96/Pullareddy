@@ -95,7 +95,7 @@ variant-selects {
 }
 
 .product-form__input--pill input[type='radio']:checked + label {
-  background-color: rgb(var(--color-foreground));
+  background-color: rgb(var(--color-button));
   color: rgb(var(--color-background));
 }
 
