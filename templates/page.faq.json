@@ -51,7 +51,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What is the shelf life of cow ghee",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Our cow ghee typically has a shelf life of 12-18 months when stored properly in an airtight container away from moisture and sunlight. However, it is recommended to consume it within six months of opening for the best flavor and quality.<\/p>",
             "page": ""
           }
@@ -60,7 +60,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What are the benefits of consuming honey",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Honey is a natural sweetener that offers numerous health benefits. It contains antioxidants and antibacterial properties that can support immune health and wound healing. Honey also provides quick energy, making it an excellent alternative to refined sugar in your diet.<\/p>",
             "page": ""
           }
@@ -69,7 +69,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Is your honey raw or processed",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>We offer both raw and processed honey options to cater to our customers' preferences. Our raw honey is minimally processed and retains all the natural enzymes, vitamins, and minerals present in the honeycomb. Our processed honey undergoes gentle filtration to remove impurities while preserving its nutritional value and flavor.<\/p>",
             "page": ""
           }
@@ -78,7 +78,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What is wood-pressed oil",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Wood-pressed oil, also known as cold-pressed or traditional oil, is extracted from seeds or nuts using wooden presses or traditional oil mills. This method involves crushing the seeds or nuts with a wooden press to extract the oil, without applying heat or chemicals, thus preserving the natural nutrients and flavor of the oil<\/p>",
             "page": ""
           }
@@ -87,7 +87,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What are the benefits of wood-pressed oil",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Wood-pressed oil retains more nutrients and flavor compared to oils extracted using modern methods involving high heat and chemical solvents. It contains essential fatty acids, vitamins, and antioxidants that promote heart health, improve digestion, and support overall well-being. Additionally, wood-pressed oil is free from harmful chemicals and additives commonly found in refined oils<\/p>",
             "page": ""
           }
@@ -96,7 +96,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Is wood-pressed oil healthier than refined oil",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Yes, wood-pressed oil is considered healthier than refined oil because it undergoes minimal processing and retains more of its natural nutrients and antioxidants. Refined oils, on the other hand, are often processed using high heat, chemicals, and solvents, which can degrade the oil's nutritional value and introduce harmful compounds<\/p>",
             "page": ""
           }
@@ -105,7 +105,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What types of seeds or nuts are used to produce wood-pressed oil",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Wood-pressed oil can be extracted from a variety of seeds and nuts, including sesame seeds, groundnuts (peanuts), coconut, mustard seeds, sunflower seeds, and almond. Each type of oil has its unique flavor profile and nutritional benefits<\/p>",
             "page": ""
           }
@@ -114,7 +114,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Is wood-pressed oil suitable for cooking",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Yes, wood-pressed oil is suitable for cooking, frying, and baking due to its high smoke point and excellent flavor. It adds a rich, nutty taste to dishes and can enhance the overall culinary experience. However, it is recommended to use wood-pressed oil for low to medium heat cooking to preserve its nutritional value and flavor<\/p>",
             "page": ""
           }
