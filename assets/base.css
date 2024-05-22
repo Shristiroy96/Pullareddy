@@ -3532,6 +3532,7 @@ height: 80px !important;
   border-bottom:1px solid #000 ;
 }
 .tab-content table *,.tab-content table{
-  border:0;
+  border: 0 !important;
+  box-shadow: unset;
 }
 /* custome style */
