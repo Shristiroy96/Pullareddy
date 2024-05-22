@@ -125,7 +125,7 @@
           "settings": {
             "title": "Benefits",
             "content-title": "{{ product.metafields.custom.benefits.value.content_title.value }}",
-            "content-sub-title": "Help Cure Joint Pain{{ product.metafields.custom.benefits.value.content_subtitle.value }}",
+            "content-sub-title": "{{ product.metafields.custom.benefits.value.content_subtitle.value }}",
             "icon-1": "{{ product.metafields.custom.benefits.value.icon_1.value }}",
             "icon-1-text": "{{ product.metafields.custom.benefits.value.icon_text_1.value }}",
             "icon-2": "{{ product.metafields.custom.benefits.value.icon_2.value }}",
