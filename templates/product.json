@@ -224,9 +224,9 @@
         "collapsible_row_9tQiTV": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "{{ product.metafields.custom.question_1.value }}",
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_1.value }}",
             "icon": "none",
-            "row_content": "<p>{{ product.metafields.custom.answer_1 | metafield_tag }}<\/p>",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_1.value }}<\/p>",
             "page": ""
           }
         },
@@ -266,7 +266,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Frequently Asked Questions",
+        "heading": "{{ product.metafields.custom.product_faq_s.value.section_title.value }}",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
