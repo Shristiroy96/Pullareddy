@@ -1,11 +1,13 @@
 
 <div class="collage-wrapper">
-{%- assign image1 = section.settings.image1 |img_url:'master' | default:'image' | placeholder_svg_tag -%}
+
+{%- assign image1 = section.settings.image1 |img_url:'master' -%}
 {%- assign image2 = section.settings.image2 |img_url:'master' -%}
 {%- assign image3 = section.settings.image3 |img_url:'master' -%}
 {%- assign image4 = section.settings.image4 |img_url:'master' -%}
 {%- assign image5 = section.settings.image5 |img_url:'master' -%}
 {%- assign image6 = section.settings.image6 |img_url:'master' -%}
+{%- if section.settings.image1 != blank or section.settings.image2 != blank or section.settings.image3 != blank or section.settings.image4 != blank or section.settings.image5 != blank -%}
     <div class="collage-container">
         <div class="collage-item item1"><img src="{{image1}}" alt="{{section.settings.image1.alt}}"></div>
         <div class="collage-item item2"><img src="{{image2}}" alt="{{section.settings.image2.alt}}"></div>
@@ -14,6 +16,8 @@
         <div class="collage-item item5"><img src="{{image5}}" alt="{{section.settings.image5.alt}}"></div>
         <div class="collage-item item6"><img src="{{image6}}" alt="{{section.settings.image6.alt}}"></div>
     </div>
+{%- endif -%}
+    
 </div>
 
 <style>
