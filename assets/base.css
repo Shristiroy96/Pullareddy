@@ -3538,7 +3538,7 @@ height: 80px !important;
 header-menu{
   text-transform: uppercase;
 }
-header-menu summary,.header__inline-menu > ul > li > a{
+header-menu summary,.header__inline-menu > ul > li > a,localization-form .disclosure__button{ 
   font-weight: bold;
 }
 
