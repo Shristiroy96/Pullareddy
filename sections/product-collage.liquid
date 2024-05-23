@@ -1,12 +1,18 @@
 
 <div class="collage-wrapper">
+{%- assign image1 = section.settings.image1 |img_url -%}
+{%- assign image2 = section.settings.image2 |img_url -%}
+{%- assign image3 = section.settings.image3 |img_url -%}
+{%- assign image4 = section.settings.image4 |img_url -%}
+{%- assign image5 = section.settings.image5 |img_url -%}
+{%- assign image6 = section.settings.image6 |img_url -%}
     <div class="collage-container">
-        <div class="collage-item item1"><img src="image1.jpg" alt="Image 1"></div>
-        <div class="collage-item item2"><img src="image2.jpg" alt="Image 2"></div>
-        <div class="collage-item item3"><img src="image3.jpg" alt="Image 3"></div>
-        <div class="collage-item item4"><img src="image4.jpg" alt="Image 4"></div>
-        <div class="collage-item item5"><img src="image5.jpg" alt="Image 5"></div>
-        <div class="collage-item item6"><img src="image6.jpg" alt="Image 6"></div>
+        <div class="collage-item item1"><img src="{{image1}}" alt="{{section.settings.image1.alt}}"></div>
+        <div class="collage-item item2"><img src="{{image2}}" alt="{{section.settings.image2.alt}}"></div>
+        <div class="collage-item item3"><img src="{{image3}}" alt="{{section.settings.image3.alt}}"></div>
+        <div class="collage-item item4"><img src="{{image4}}" alt="{{section.settings.image4.alt}}"></div>
+        <div class="collage-item item5"><img src="{{image5}}" alt="{{section.settings.image5.alt}}"></div>
+        <div class="collage-item item6"><img src="{{image6}}" alt="{{section.settings.image6.alt}}"></div>
     </div>
 </div>
 
