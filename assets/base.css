@@ -3538,7 +3538,8 @@ height: 80px !important;
 header-menu{
   text-transform: uppercase;
 }
-header-menu summary{
+header-menu summary,.header__inline-menu > ul > li > a{
   font-weight: bold;
 }
+header__menu-item
 /* custome style */
