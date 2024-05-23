@@ -3535,4 +3535,10 @@ height: 80px !important;
   border: 0 !important;
   box-shadow: unset;
 }
+header-menu{
+  text-transform: uppercase;
+}
+header-menu summary{
+  text-transform: bold;
+}
 /* custome style */
