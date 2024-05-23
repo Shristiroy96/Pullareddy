@@ -7,7 +7,7 @@
 {%- assign image4 = section.settings.image4 |img_url:'master' -%}
 {%- assign image5 = section.settings.image5 |img_url:'master' -%}
 {%- assign image6 = section.settings.image6 |img_url:'master' -%}
-{%- if section.settings.image1 != blank or section.settings.image2 != blank or section.settings.image3 != blank or section.settings.image4 != blank or section.settings.image5 != blank -%}
+{%- if section.settings.image1 != blank and section.settings.image2 != blank and section.settings.image3 != blank and section.settings.image4 != blank and section.settings.image5 != blank -%}
     <div class="collage-container">
         <div class="collage-item item1"><img src="{{image1}}" alt="{{section.settings.image1.alt}}"></div>
         <div class="collage-item item2"><img src="{{image2}}" alt="{{section.settings.image2.alt}}"></div>
