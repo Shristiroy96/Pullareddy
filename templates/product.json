@@ -196,7 +196,7 @@
       "type": "vedio-icons-product-page",
       "settings": {
         "heading": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/p1ERK1FETn8?feature=shared",
         "cover_image": "shopify:\/\/shop_images\/FP7A5456.png",
@@ -275,8 +275,20 @@
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 20,
+        "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "product_collage_QCfGwM": {
+      "type": "product-collage",
+      "settings": {
+        "title": "Product Collage",
+        "image1": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati01.jpg",
+        "image2": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-06_at_18.11.24_156dacaf.jpg",
+        "image3": "shopify:\/\/shop_images\/WheatgrassPowder_100gm_TriphalaChurn.png",
+        "image4": "shopify:\/\/shop_images\/1Pumpkinseeds_300g_1FlexSeed_250GM.png",
+        "image5": "shopify:\/\/shop_images\/cowdungdhoopcup_23.png",
+        "image6": "shopify:\/\/shop_images\/A2BilonaGheeSubscription.jpg"
       }
     },
     "related-products": {
@@ -360,18 +372,6 @@
         "alignment": "center",
         "heading_size": "h1"
       }
-    },
-    "product_collage_QCfGwM": {
-      "type": "product-collage",
-      "settings": {
-        "title": "Product Collage",
-        "image1": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati01.jpg",
-        "image2": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-06_at_18.11.24_156dacaf.jpg",
-        "image3": "shopify:\/\/shop_images\/WheatgrassPowder_100gm_TriphalaChurn.png",
-        "image4": "shopify:\/\/shop_images\/1Pumpkinseeds_300g_1FlexSeed_250GM.png",
-        "image5": "shopify:\/\/shop_images\/cowdungdhoopcup_23.png",
-        "image6": "shopify:\/\/shop_images\/A2BilonaGheeSubscription.jpg"
-      }
     }
   },
   "order": [
@@ -380,9 +380,9 @@
     "did_you_know_XcKRqg",
     "vedio_icons_product_page_bXHm8N",
     "collapsible_content_FR4NLm",
+    "product_collage_QCfGwM",
     "related-products",
     "1713504574ec0b922c",
-    "why_choose_us_kpmkYb",
-    "product_collage_QCfGwM"
+    "why_choose_us_kpmkYb"
   ]
 }

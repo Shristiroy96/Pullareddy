@@ -247,6 +247,7 @@
         "text_7L78ch",
         "buttons_YCwwyJ"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/A2_Bilona_Ghee_Subscription.png",
         "image_overlay_opacity": 0,
@@ -261,6 +262,18 @@
         "show_text_below": true
       }
     },
+    "product_collage_zWJQDF": {
+      "type": "product-collage",
+      "settings": {
+        "title": "Product Collage",
+        "image1": "shopify:\/\/shop_images\/9.webp",
+        "image2": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-06_at_18.11.24_156dacaf.jpg",
+        "image3": "shopify:\/\/shop_images\/Gavyamart_1Ltr_Front_5d1513f1-9122-4633-a93f-9667aa582850.webp",
+        "image4": "shopify:\/\/shop_images\/wheat_triphla.png",
+        "image5": "shopify:\/\/shop_images\/WheatgrassPowder_100gm_TriphalaChurn.png",
+        "image6": "shopify:\/\/shop_images\/A2BilonaGheeSubscription.jpg"
+      }
+    },
     "collage_6ETb84": {
       "type": "collage",
       "blocks": {
@@ -273,7 +286,7 @@
         "collection_jzY68j": {
           "type": "collection",
           "settings": {
-            "collection": "explore-pooja-and-hawan-essentials"
+            "collection": "pooja-spirituality"
           }
         },
         "collection_QwxVjQ": {
@@ -476,6 +489,7 @@
     "featured_collection_WUb8KD",
     "rich_text_xNpaWJ",
     "image_banner_jRQqk8",
+    "product_collage_zWJQDF",
     "collage_6ETb84",
     "image_with_text_LqEcbB",
     "image_with_text_zFyqFV",
