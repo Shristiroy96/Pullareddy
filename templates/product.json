@@ -375,6 +375,13 @@
       "type": "static-image-collage",
       "settings": {
       }
+    },
+    "product_collage_QCfGwM": {
+      "type": "product-collage",
+      "settings": {
+        "title": "Product Collage",
+        "heading_size": "h1"
+      }
     }
   },
   "order": [
@@ -387,6 +394,7 @@
     "1713504574ec0b922c",
     "why_choose_us_kpmkYb",
     "static_image_collage_BkTEAD",
-    "static_image_collage_r7eVAx"
+    "static_image_collage_r7eVAx",
+    "product_collage_QCfGwM"
   ]
 }
