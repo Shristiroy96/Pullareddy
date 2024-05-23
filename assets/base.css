@@ -3535,7 +3535,8 @@ height: 80px !important;
   border: 0 !important;
   box-shadow: unset;
 }
-header-menu{
+header svg{
+  stroke: rgb(var(--color-foreground));
   
 }
 header-menu summary,.header__inline-menu > ul > li > a,localization-form .disclosure__button{ 
