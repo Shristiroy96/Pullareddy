@@ -196,7 +196,7 @@
       "type": "vedio-icons-product-page",
       "settings": {
         "heading": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/p1ERK1FETn8?feature=shared",
         "cover_image": "shopify:\/\/shop_images\/FP7A5456.png",
