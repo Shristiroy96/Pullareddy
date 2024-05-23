@@ -3539,6 +3539,6 @@ header-menu{
   text-transform: uppercase;
 }
 header-menu summary{
-  text-transform: bold;
+  font-weight: bold;
 }
 /* custome style */
