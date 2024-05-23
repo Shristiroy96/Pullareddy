@@ -373,6 +373,7 @@
     },
     "static_image_collage_r7eVAx": {
       "type": "static-image-collage",
+      "disabled": true,
       "settings": {
       }
     },
@@ -380,7 +381,8 @@
       "type": "product-collage",
       "settings": {
         "title": "Product Collage",
-        "heading_size": "h1"
+        "heading_size": "h1",
+        "image1": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati01.jpg"
       }
     }
   },
