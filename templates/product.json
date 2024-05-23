@@ -361,22 +361,6 @@
         "heading_size": "h1"
       }
     },
-    "static_image_collage_BkTEAD": {
-      "type": "static-image-collage",
-      "disabled": true,
-      "settings": {
-        "image1": "shopify:\/\/shop_images\/sesame1.png",
-        "image2": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati03.jpg",
-        "image3": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati03.jpg",
-        "image4": "shopify:\/\/shop_images\/WhatsApp_Image_2023-07-24_at_12.36.08_PM.webp"
-      }
-    },
-    "static_image_collage_r7eVAx": {
-      "type": "static-image-collage",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "product_collage_QCfGwM": {
       "type": "product-collage",
       "settings": {
@@ -400,8 +384,6 @@
     "related-products",
     "1713504574ec0b922c",
     "why_choose_us_kpmkYb",
-    "static_image_collage_BkTEAD",
-    "static_image_collage_r7eVAx",
     "product_collage_QCfGwM"
   ]
 }
