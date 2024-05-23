@@ -3536,10 +3536,11 @@ height: 80px !important;
   box-shadow: unset;
 }
 header-menu{
-  text-transform: uppercase;
+  
 }
 header-menu summary,.header__inline-menu > ul > li > a,localization-form .disclosure__button{ 
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* custome style */
