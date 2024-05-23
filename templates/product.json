@@ -370,6 +370,11 @@
         "image3": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati03.jpg",
         "image4": "shopify:\/\/shop_images\/WhatsApp_Image_2023-07-24_at_12.36.08_PM.webp"
       }
+    },
+    "static_image_collage_r7eVAx": {
+      "type": "static-image-collage",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -381,6 +386,7 @@
     "related-products",
     "1713504574ec0b922c",
     "why_choose_us_kpmkYb",
-    "static_image_collage_BkTEAD"
+    "static_image_collage_BkTEAD",
+    "static_image_collage_r7eVAx"
   ]
 }
