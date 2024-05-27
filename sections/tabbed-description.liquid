@@ -5,7 +5,7 @@
 
 <div class="">
   <section class="horizontal-tabs-description">
-    <div class="container">
+    <div class="container desktop-tab">
       <div class="tab-container">
         <div class="color-{{ section.settings.color_scheme }} gradient">
           <ul class="tab-navigation page-width">
@@ -45,6 +45,44 @@
         </div>
       </div>
     </div>
+    <div class="container mobile-tab">
+      <div class="tab-container">
+        <div class="color-{{ section.settings.color_scheme }} gradient">
+          <ul class="tab-navigation page-width">
+            {% for block in section.blocks %}
+              <li class="tab-item">
+                <a href="#{{ block.id }}" class="{% if forloop.first %}active{% endif %}">{{ block.settings.title }}</a>
+              </li>
+              <div class="tab-content">
+               <div id="{{ block.id }}" class="tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
+              {% if block.type == 'description' %}
+                {{ product.description }}
+              {% elsif block.type == 'benefits' and block.settings['content-title'] != blank %}
+                <h3>{{ block.settings['content-title'] }}</h3>
+                <span>{{ block.settings['content-sub-title'] }}</span>
+                <div class="benefits-container">
+                  {%- for i in (1..4) -%}
+                    <div class="icon-wrapper">
+                      {%- assign block_icon_id = 'icon-' | append: i -%}
+                      {%- assign block_text_id = 'icon-' | append: i | append: '-text' -%}
+                      {%- assign block_icon = block.settings[block_icon_id] | img_url: '100x' -%}
+                      {%- assign block_text = block.settings[block_text_id] -%}
+
+                     <div class="img-wrapper"> <img src="{{block_icon}}"></div>
+                      <span>{{ block_text }}</span>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              {% else %}
+                {{ block.settings.content }}
+              {% endif %}
+            </div>
+              </div>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 <script>
@@ -72,6 +110,7 @@
   });
 </script>
 <style>
+
 .tab-benefits {
     text-align: center;
 }
@@ -144,7 +183,15 @@
     flex-basis: 50%;
 }
 }
+@media (min-width:481px){
+    .mobile-tab{
+    display:none;
+  }
+}
 @media screen and (max-width: 480px) {
+  .desktop-tab{
+  display:none;
+}
     .tab-navigation {
         display: flex;
         flex: 1;
