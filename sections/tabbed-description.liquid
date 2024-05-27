@@ -18,7 +18,7 @@
         </div>
         <div class="tab-content page-width">
           {% for block in section.blocks %}
-            <div id="{{ block.id }}" class="tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
+            <div id="{{ block.id }}" class="{{ block.id }} tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
               {% if block.type == 'description' %}
                 {{ product.description }}
               {% elsif block.type == 'benefits' and block.settings['content-title'] != blank %}
@@ -54,7 +54,7 @@
                 <a href="#{{ block.id }}" class="{% if forloop.first %}active{% endif %}">{{ block.settings.title }}</a>
               </li>
               <div class="tab-content">
-               <div id="{{ block.id }}" class="tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
+               <div id="{{ block.id }}" class="{{ block.id }} tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
               {% if block.type == 'description' %}
                 {{ product.description }}
               {% elsif block.type == 'benefits' and block.settings['content-title'] != blank %}
