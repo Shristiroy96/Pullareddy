@@ -93,7 +93,7 @@
               event.preventDefault();
               var target = this.getAttribute('href').substring(1);
               var tabPanes = document.querySelectorAll('.tab-pane');
-              var activeTab = document.getElementById(target);
+              var activeTabs = document.querySelectorAll(target);
 
               tabs.forEach(function(tab) {
                   tab.classList.remove('active');
@@ -104,7 +104,9 @@
               });
 
               this.classList.add('active');
-              activeTab.style.display = 'block';
+              activeTabs.forEach(function(tab) {
+                  tab.style.display = 'none';
+              });
           });
       });
   });
