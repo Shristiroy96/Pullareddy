@@ -3534,6 +3534,7 @@ height: 80px !important;
 }
 .tab-content table *,.tab-content table{
   border: 0 !important;
+  padding: 0 !important;
   box-shadow: unset;
 }
 header svg{
