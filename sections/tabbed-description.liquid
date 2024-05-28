@@ -51,7 +51,7 @@
           <ul class="tab-navigation page-width">
             {% for block in section.blocks %}
               <li class="tab-item">
-                <a href="#{{ block.id }}" class="{% if forloop.first %}active{% endif %}">{{ block.settings.title }}</a>
+                <a href="#{{ block.id }}" class="">{{ block.settings.title }}</a>
               </li>
               
                <div id="{{ block.id }}" class="{{ block.id }} tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
