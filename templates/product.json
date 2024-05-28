@@ -279,18 +279,6 @@
         "padding_bottom": 28
       }
     },
-    "product_collage_QCfGwM": {
-      "type": "product-collage",
-      "settings": {
-        "title": "Product Collage",
-        "image1": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati01_1.png",
-        "image2": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-06_at_18.11.24_156dacaf.jpg",
-        "image3": "shopify:\/\/shop_images\/WheatgrassPowder_100gm_TriphalaChurn.png",
-        "image4": "shopify:\/\/shop_images\/1Pumpkinseeds_300g_1FlexSeed_250GM.png",
-        "image5": "shopify:\/\/shop_images\/cowdungdhoopcup_23_2.png",
-        "image6": "shopify:\/\/shop_images\/A2BilonaGheeSubscription.jpg"
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -303,10 +291,22 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": true,
-        "show_rating": true,
+        "show_rating": false,
         "columns_mobile": "2",
         "padding_top": 32,
         "padding_bottom": 64
+      }
+    },
+    "product_collage_QCfGwM": {
+      "type": "product-collage",
+      "settings": {
+        "title": "Product Collage",
+        "image1": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati01_1.png",
+        "image2": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-06_at_18.11.24_156dacaf.jpg",
+        "image3": "shopify:\/\/shop_images\/WheatgrassPowder_100gm_TriphalaChurn.png",
+        "image4": "shopify:\/\/shop_images\/1Pumpkinseeds_300g_1FlexSeed_250GM.png",
+        "image5": "shopify:\/\/shop_images\/cowdungdhoopcup_23_2.png",
+        "image6": "shopify:\/\/shop_images\/A2BilonaGheeSubscription.jpg"
       }
     },
     "1713504574ec0b922c": {
@@ -386,8 +386,8 @@
     "did_you_know_XcKRqg",
     "vedio_icons_product_page_bXHm8N",
     "collapsible_content_FR4NLm",
-    "product_collage_QCfGwM",
     "related-products",
+    "product_collage_QCfGwM",
     "1713504574ec0b922c",
     "why_choose_us_kpmkYb"
   ]
