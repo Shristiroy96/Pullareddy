@@ -92,7 +92,7 @@
           tab.addEventListener('click', function(event) {
               event.preventDefault();
               document.querySelectorAll('.tab-item a').forEach(function(pane) {
-                  pane.style.classList.remove('active')
+                  pane.classList.remove('active')
               });
               var target = this.getAttribute('href').substring(1);
               this.parentElement.classList.add('active')
