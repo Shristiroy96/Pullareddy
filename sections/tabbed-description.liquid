@@ -53,7 +53,7 @@
               <li class="tab-item">
                 <a href="#{{ block.id }}" class="{% if forloop.first %}active{% endif %}">{{ block.settings.title }}</a>
               </li>
-              <div class="tab-content">
+              
                <div id="{{ block.id }}" class="{{ block.id }} tab-pane {% if block.type == 'benefits' %} tab-benefits{% endif %}">
               {% if block.type == 'description' %}
                 {{ product.description }}
@@ -77,7 +77,7 @@
                 {{ block.settings.content }}
               {% endif %}
             </div>
-              </div>
+              
             {% endfor %}
           </ul>
         </div>
