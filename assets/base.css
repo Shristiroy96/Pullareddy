@@ -138,9 +138,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding: 0 5rem;
   }
 }
-#shopify-block-judge_me_reviews_preview_badge_fwEbB3{
-  pointer-events: none !important;
-}
+
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
