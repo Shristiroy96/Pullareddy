@@ -93,7 +93,7 @@
               event.preventDefault();
               var target = this.getAttribute('href').substring(1);
               var tabPanes = document.querySelectorAll('.tab-pane');
-              var activeTabs = document.querySelectorAll(target);
+              var activeTabs = document.querySelectorAll('.'+target);
 
               tabs.forEach(function(tab) {
                   tab.classList.remove('active');
