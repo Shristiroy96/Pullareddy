@@ -91,15 +91,20 @@
       tabs.forEach(function(tab) {
           tab.addEventListener('click', function(event) {
               event.preventDefault();
+              document.querySelectorAll('.tab-item a').forEach(function(pane) {
+                  pane.style.classList.remove('active')
+              });
               var target = this.getAttribute('href').substring(1);
+              this.parentElement.classList.add('active')
               var tabPanes = document.querySelectorAll('.tab-pane');
               var activeTabs = document.querySelectorAll('.'+target);
 
-              tabs.forEach(function(tab) {
+              tabs.forEach(function(tab){
                   tab.classList.remove('active');
               });
 
               tabPanes.forEach(function(pane) {
+                pane.classList.remove('active')
                   pane.style.display = 'none';
               });
 
