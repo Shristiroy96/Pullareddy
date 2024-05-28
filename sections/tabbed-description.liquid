@@ -91,7 +91,7 @@
       tabs.forEach(function(tab) {
           tab.addEventListener('click', function(event) {
               event.preventDefault();
-              document.querySelectorAll('.tab-item a').forEach(function(pane){
+              document.querySelectorAll('.tab-item li').forEach(function(pane){
                   pane.classList.remove('active')
               });
               var target = this.getAttribute('href').substring(1);
