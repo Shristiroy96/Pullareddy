@@ -91,25 +91,21 @@
       tabs.forEach(function(tab) {
           tab.addEventListener('click', function(event) {
               event.preventDefault();
-              document.querySelectorAll('.tab-item a').forEach(function(pane) {
+              document.querySelectorAll('.tab-item a').forEach(function(pane){
                   pane.classList.remove('active')
               });
               var target = this.getAttribute('href').substring(1);
               this.parentElement.classList.add('active')
               var tabPanes = document.querySelectorAll('.tab-pane');
               var activeTabs = document.querySelectorAll('.'+target);
-
               tabs.forEach(function(tab){
                   tab.classList.remove('active');
               });
-
               tabPanes.forEach(function(pane) {
                 pane.classList.remove('active')
                   pane.style.display = 'none';
               });
-
-              this.classList.add('active');
-              activeTabs.forEach(function(tab) {
+              activeTabs.forEach(function(tab){
                   tab.style.display = 'block';
                   tab.classList.add('active')
               });
