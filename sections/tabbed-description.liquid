@@ -86,58 +86,59 @@
   </section>
 </div>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var tabs = document.querySelectorAll('.tab-item a');
-    var previouslyActiveTab = null;
-
-    tabs.forEach(function(tab) {
-        tab.addEventListener('click', function(event) {
-            event.preventDefault();
-            var target = this.getAttribute('href').substring(1);
-            var tabPanes = document.querySelectorAll('.tab-pane');
-            var activeTabs = document.querySelectorAll('.' + target);
-
-            // Check if the clicked tab is the same as the previously active tab
-            if (previouslyActiveTab === this) {
-                // If so, close the tab
-                this.classList.remove('active');
-                this.parentElement.classList.remove('active');
-                activeTabs.forEach(function(tab) {
-                    tab.style.display = 'none';
-                    tab.classList.remove('active');
-                });
-                previouslyActiveTab = null; // Reset previously active tab
-                return; // Exit the function early
-            }
-
-            // Otherwise, activate the clicked tab
-            document.querySelectorAll('.tab-item li').forEach(function(pane) {
-                pane.classList.remove('active');
-            });
+ document.addEventListener('DOMContentLoaded', function() {
+            var tabs = document.querySelectorAll('.tab-item a');
+            var previouslyActiveTab = null;
 
             tabs.forEach(function(tab) {
-                tab.classList.remove('active');
+                tab.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var target = this.getAttribute('href').substring(1);
+                    var tabPanes = document.querySelectorAll('.tab-pane');
+                    var activeTabs = document.querySelectorAll('#' + target);
+
+                    if (window.innerWidth <= 480) {
+                        // Check if the clicked tab is the same as the previously active tab
+                        if (previouslyActiveTab === this) {
+                            // If so, close the tab
+                            this.classList.remove('active');
+                            this.parentElement.classList.remove('active');
+                            activeTabs.forEach(function(tab) {
+                                tab.style.display = 'none';
+                                tab.classList.remove('active');
+                            });
+                            previouslyActiveTab = null; // Reset previously active tab
+                            return; // Exit the function early
+                        }
+                    }
+
+                    // Otherwise, activate the clicked tab
+                    document.querySelectorAll('.tab-item').forEach(function(item) {
+                        item.classList.remove('active');
+                    });
+
+                    tabs.forEach(function(tab) {
+                        tab.classList.remove('active');
+                    });
+
+                    tabPanes.forEach(function(pane) {
+                        pane.classList.remove('active');
+                        pane.style.display = 'none';
+                    });
+
+                    this.classList.add('active');
+                    this.parentElement.classList.add('active');
+
+                    activeTabs.forEach(function(tab) {
+                        tab.style.display = 'block';
+                        tab.classList.add('active');
+                    });
+
+                    // Set the previously active tab to the current tab
+                    previouslyActiveTab = this;
+                });
             });
-
-            tabPanes.forEach(function(pane) {
-                pane.classList.remove('active');
-                pane.style.display = 'none';
-            });
-
-            this.classList.add('active');
-            this.parentElement.classList.add('active');
-
-            activeTabs.forEach(function(tab) {
-                tab.style.display = 'block';
-                tab.classList.add('active');
-            });
-
-            // Set the previously active tab to the current tab
-            previouslyActiveTab = this;
         });
-    });
-});
-
 </script>
 <style>
 
