@@ -350,21 +350,21 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script type='text/javascript'>
-  if(window.location.href.match(/products/) != null) {
-    (function()
-    {
-      if( window.localStorage )
-      {
-        if( !localStorage.getItem('firstLoad') )
-        {
-          localStorage['firstLoad'] = true;
-          window.location.reload();
-        }  
-        else
-          localStorage.removeItem('firstLoad');
-      }
-    })();
-  }
+  const section = document.getElementById('judgeme_product_reviews');
+  const paginationButtons = document.querySelectorAll('.jdgm-preview-badge');
+  let scrollInterval;
+  
+  paginationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      setTimeout(() => {
+        clearInterval(scrollInterval);
+        }, 1000);
+  
+      scrollInterval = setInterval(() => {
+        section.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }, 100);
+    });
+  });
 </script>
   </body>
 </html>
