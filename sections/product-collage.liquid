@@ -12,7 +12,12 @@
     and section.settings.image5 != blank
   -%}
     <div class="collage-container">
-      <div class="collage-item item1"><img src="{{image1}}" alt="{{section.settings.image1.alt}}"></div>
+      <div class="collage-item item1">
+        <img
+          src="{{section.settings.image1 | image_url: width: 400, height: 400}}"
+          alt="{{section.settings.image1.alt}}"
+        >
+      </div>
       <div class="collage-item item2"><img src="{{image2}}" alt="{{section.settings.image2.alt}}"></div>
       <div class="collage-item item3"><img src="{{image3}}" alt="{{section.settings.image3.alt}}"></div>
       <div class="collage-item item4"><img src="{{image4}}" alt="{{section.settings.image4.alt}}"></div>
