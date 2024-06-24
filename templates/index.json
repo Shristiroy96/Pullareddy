@@ -51,12 +51,12 @@
         "slide_UwtNVR": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/11_oct.png",
+            "image": "shopify:\/\/shop_images\/HAVAN_CUP-03.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "link": "",
+            "link": "shopify:\/\/collections\/pooja-spirituality",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
