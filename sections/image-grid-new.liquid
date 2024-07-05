@@ -8,14 +8,14 @@
   and section.settings.image4 != blank
 -%}
   <div class="image-container">
-    <div class="column">
+    <div class="column short">
       <img src="{{image1}}" alt="{{section.settings.image1.alt}}">
     </div>
     <div class="column">
       <img src="{{image2}}" alt="{{section.settings.image2.alt}}">
       <img src="{{image3}}" alt="{{section.settings.image3.alt}}">
     </div>
-    <div class="column">
+    <div class="column short">
       <img src="{{image4}}" alt="{{section.settings.image4.alt}}">
     </div>
   </div>
@@ -37,6 +37,12 @@
               width: 100%;
               height: auto;
               margin-bottom: 10px;
+
+          }
+    .short img {
+           max-height: 85%;
+    object-fit: cover;
+    object-position: top;
           }
   </style>
 {%- endif -%}
