@@ -308,6 +308,7 @@
     },
     "product_collage_QCfGwM": {
       "type": "product-collage",
+      "disabled": true,
       "settings": {
         "title": "Product Collage",
         "image1": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati01_1.png",
