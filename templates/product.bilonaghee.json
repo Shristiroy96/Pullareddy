@@ -397,6 +397,7 @@
       "blocks": {
         "column_qX6kQF": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/1_Mobile_View.png",
             "title": "",
@@ -444,6 +445,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_DRqr7K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_5.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -451,7 +462,8 @@
         "column_GTLnPr",
         "column_6bUiiF",
         "column_wEeNjp",
-        "column_HL6nNq"
+        "column_HL6nNq",
+        "column_DRqr7K"
       ],
       "custom_css": [
 
