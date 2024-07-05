@@ -484,6 +484,15 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "image_grid_new_Rkn9id": {
+      "type": "image-grid-new",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/3_3.png",
+        "image2": "shopify:\/\/shop_images\/3_1.png",
+        "image3": "shopify:\/\/shop_images\/3_2.png",
+        "image4": "shopify:\/\/shop_images\/3_3.png"
+      }
     }
   },
   "order": [
@@ -497,6 +506,7 @@
     "1713504574ec0b922c",
     "why_choose_us_kpmkYb",
     "image_banner_bNBXiU",
-    "multicolumn_TrFxBj"
+    "multicolumn_TrFxBj",
+    "image_grid_new_Rkn9id"
   ]
 }
