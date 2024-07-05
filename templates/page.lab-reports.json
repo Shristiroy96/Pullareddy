@@ -51,130 +51,13 @@
             "btn-tile": "Report",
             "btn-link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0637\/0073\/0018\/files\/gavyamart_ghee_report_nabl_certified.pdf?v=1720158977"
           }
-        },
-        "feature_block_AhVgdP": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_GbFQwm": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_whJdFD": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_HWbmmB": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_CiqHzP": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_PgGa6L": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_UbMUPV": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_wctDbE": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_P3bGRg": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_kDhrG8": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_gRezJf": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_RUcQPB": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
-        },
-        "feature_block_8TaRKW": {
-          "type": "feature_block",
-          "settings": {
-            "title": "Feature Title",
-            "btn-tile": "Download",
-            "btn-link": ""
-          }
         }
       },
       "block_order": [
         "feature_block_YKaUWP",
         "feature_block_Wb4XxD",
         "feature_block_BBnQiV",
-        "feature_block_n9rgYY",
-        "feature_block_AhVgdP",
-        "feature_block_GbFQwm",
-        "feature_block_whJdFD",
-        "feature_block_HWbmmB",
-        "feature_block_CiqHzP",
-        "feature_block_PgGa6L",
-        "feature_block_UbMUPV",
-        "feature_block_wctDbE",
-        "feature_block_P3bGRg",
-        "feature_block_kDhrG8",
-        "feature_block_gRezJf",
-        "feature_block_RUcQPB",
-        "feature_block_8TaRKW"
+        "feature_block_n9rgYY"
       ],
       "settings": {
         "title": "Lab Reports",
