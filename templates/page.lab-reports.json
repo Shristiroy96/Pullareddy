@@ -47,6 +47,14 @@
         "feature_block_n9rgYY": {
           "type": "feature_block",
           "settings": {
+            "title": "NABL Certified",
+            "btn-tile": "Report",
+            "btn-link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0637\/0073\/0018\/files\/gavyamart_ghee_report_nabl_certified.pdf?v=1720158977"
+          }
+        },
+        "feature_block_AhVgdP": {
+          "type": "feature_block",
+          "settings": {
             "title": "Feature Title",
             "btn-tile": "Download",
             "btn-link": ""
@@ -154,6 +162,7 @@
         "feature_block_Wb4XxD",
         "feature_block_BBnQiV",
         "feature_block_n9rgYY",
+        "feature_block_AhVgdP",
         "feature_block_GbFQwm",
         "feature_block_whJdFD",
         "feature_block_HWbmmB",
