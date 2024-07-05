@@ -7,7 +7,7 @@
   and section.settings.image3 != blank
   and section.settings.image4 != blank
 -%}
-  <div class="container">
+  <div class="image-container">
     <div class="column">
       <img src="{{image1}}" alt="{{section.settings.image1.alt}}">
     </div>
@@ -20,19 +20,19 @@
     </div>
   </div>
   <style>
-    .container {
-        display: flex;
-        justify-content: space-around;
-    }
-    .column {
-        flex: 1;
-        padding: 10px;
-    }
-    .column img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
+      .image-container {
+          display: flex;
+          justify-content: space-around;
+      }
+    .image-container .column {
+          flex: 1;
+          padding: 10px;
+      }
+     .image-container .column img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+      }
   </style>
 {%- endif -%}
 {% schema %}
