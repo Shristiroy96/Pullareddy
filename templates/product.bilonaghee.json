@@ -117,6 +117,7 @@
         },
         "text_JTC339": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "General Directions",
             "content": "<p>Desi Cow Ghee can be added to any dish to enhance digestion and absorption of nutrients. Add 1 tsp to each meal or use ghee in replacement of butter or oil in a recipe.<\/p>"
