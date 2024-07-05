@@ -19,6 +19,21 @@
       <img src="{{image4}}" alt="{{section.settings.image4.alt}}">
     </div>
   </div>
+  <style>
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .column {
+        flex: 1;
+        padding: 10px;
+    }
+    .column img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+  </style>
 {%- endif -%}
 {% schema %}
 {
