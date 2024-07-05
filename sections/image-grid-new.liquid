@@ -20,22 +20,24 @@
     </div>
   </div>
   <style>
-      .image-container {
+    @media(min-width:768px){
+            .image-container {
+              display: flex;
+              justify-content: space-around;
+          }
+    }
+        .image-container .column {
+              flex: 1;
+              padding: 10px;
           display: flex;
-          justify-content: space-around;
-      }
-    .image-container .column {
-          flex: 1;
-          padding: 10px;
-      display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-      }
-     .image-container .column img {
-          width: 100%;
-          height: auto;
-          margin-bottom: 10px;
-      }
+        flex-direction: column;
+        justify-content: space-between;
+          }
+         .image-container .column img {
+              width: 100%;
+              height: auto;
+              margin-bottom: 10px;
+          }
   </style>
 {%- endif -%}
 {% schema %}
