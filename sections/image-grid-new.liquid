@@ -1,6 +1,49 @@
+<div class="container">
+  <div class="column">
+    <img src="image1.jpg" alt="Image 1">
+  </div>
+  <div class="column">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+  <div class="column">
+    <img src="image4.jpg" alt="Image 4">
+  </div>
+</div>
 {% schema %}
+{
+  "name": "Section name",
+  "settings": [
+       {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "image 1"
+  },
   {
-    "name": "Section name",
-    "settings": []
+      "type": "image_picker",
+      "id": "image2",
+      "label": "image 2"
+  },
+  {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "image 3"
+  },
+  {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "image 4"
+  },
+  {
+      "type": "image_picker",
+      "id": "image5",
+      "label": "image 5"
+  },
+  {
+      "type": "image_picker",
+      "id": "image6",
+      "label": "image 6"
   }
+  ]
+}
 {% endschema %}
