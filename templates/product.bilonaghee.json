@@ -453,6 +453,9 @@
         "column_wEeNjp",
         "column_HL6nNq"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -461,9 +464,9 @@
         "columns_desktop": 5,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
