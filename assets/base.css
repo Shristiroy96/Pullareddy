@@ -3559,3 +3559,6 @@ header-menu summary,.header__inline-menu > ul > li > a,localization-form .disclo
 #shopify-section-template--16960998047906__multicolumn_TrFxBj{
   margin-top:0!important;
 }
+#shopify-section-template--16960998047906__multicolumn_TrFxBj .page-width{
+  max-width:100%;
+}
