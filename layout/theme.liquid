@@ -282,7 +282,7 @@
     </script>
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {{ template.suffix }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -349,22 +349,22 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script type='text/javascript'>
-  const section = document.getElementById('judgeme_product_reviews');
-  const paginationButtons = document.querySelectorAll('.jdgm-preview-badge');
-  let scrollInterval;
-  
-  paginationButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      setTimeout(() => {
-        clearInterval(scrollInterval);
-        }, 1000);
-  
-      scrollInterval = setInterval(() => {
-        section.scrollIntoView({ behavior: 'instant', block: 'start' });
-      }, 100);
-    });
-  });
-</script>
+    <script type="text/javascript">
+      const section = document.getElementById('judgeme_product_reviews');
+      const paginationButtons = document.querySelectorAll('.jdgm-preview-badge');
+      let scrollInterval;
+
+      paginationButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          setTimeout(() => {
+            clearInterval(scrollInterval);
+            }, 1000);
+
+          scrollInterval = setInterval(() => {
+            section.scrollIntoView({ behavior: 'instant', block: 'start' });
+          }, 100);
+        });
+      });
+    </script>
   </body>
 </html>
