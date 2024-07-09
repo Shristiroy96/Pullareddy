@@ -1,0 +1,513 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.key_details.value }}",
+            "content": "",
+            "text_style": "subtitle"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "judge_me_reviews_preview_badge_FAkQHR": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "text_AUabPj": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "content": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>",
+            "text_style": "body"
+          }
+        },
+        "icon_with_text_dzgBVp": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "none",
+            "image_1": "{{ product.metafields.custom.product_details_badges_.value.icon_1.value }}",
+            "heading_1": "{{ product.metafields.custom.product_details_badges_.value.heading_1.value }}",
+            "icon_2": "return",
+            "image_2": "{{ product.metafields.custom.product_details_badges_.value.icon_2.value }}",
+            "heading_2": "{{ product.metafields.custom.product_details_badges_.value.heading_2.value }}",
+            "icon_3": "truck",
+            "image_3": "{{ product.metafields.custom.product_details_badges_.value.icon_3.value }}",
+            "heading_3": "{{ product.metafields.custom.product_details_badges_.value.heading_3.value }}"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_FAkQHR",
+        "price",
+        "variant_picker",
+        "text_AUabPj",
+        "icon_with_text_dzgBVp",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "tabbed_description_mqpWmh": {
+      "type": "tabbed-description",
+      "blocks": {
+        "description_DgDq9G": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "content": ""
+          }
+        },
+        "text_JTC339": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "General Directions",
+            "content": "<p>Desi Cow Ghee can be added to any dish to enhance digestion and absorption of nutrients. Add 1 tsp to each meal or use ghee in replacement of butter or oil in a recipe.<\/p>"
+          }
+        },
+        "text_dADHzD": {
+          "type": "text",
+          "settings": {
+            "title": "Features ",
+            "content": "{{ product.metafields.custom.general_direction | metafield_tag }}"
+          }
+        },
+        "benefits_aQwmRH": {
+          "type": "benefits",
+          "settings": {
+            "title": "Benefits",
+            "content-title": "{{ product.metafields.custom.benefits.value.content_title.value }}",
+            "content-sub-title": "{{ product.metafields.custom.benefits.value.content_subtitle.value }}",
+            "icon-1": "{{ product.metafields.custom.benefits.value.icon_1.value }}",
+            "icon-1-text": "{{ product.metafields.custom.benefits.value.icon_text_1.value }}",
+            "icon-2": "{{ product.metafields.custom.benefits.value.icon_2.value }}",
+            "icon-2-text": "{{ product.metafields.custom.benefits.value.icon_text_2.value }}",
+            "icon-3": "{{ product.metafields.custom.benefits.value.icon_3.value }}",
+            "icon-3-text": "{{ product.metafields.custom.benefits.value.icon_text_3.value }}",
+            "icon-4": "{{ product.metafields.custom.benefits.value.icon_4.value }}",
+            "icon-4-text": "{{ product.metafields.custom.benefits.value.icon_text_4.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "description_DgDq9G",
+        "text_JTC339",
+        "text_dADHzD",
+        "benefits_aQwmRH"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5"
+      }
+    },
+    "did_you_know_XcKRqg": {
+      "type": "did-you-know",
+      "blocks": {
+        "feature_block_r9ba6d": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "{{ product.metafields.custom.did_you_know_.value.icon_one.value }}",
+            "title": "{{ product.metafields.custom.did_you_know_.value.icon_one_title.value }}",
+            "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_one_desc1 | metafield_tag }}<\/p>"
+          }
+        },
+        "feature_block_LtbTmg": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "{{ product.metafields.custom.did_you_know_.value.icon_two.value }}",
+            "title": "{{ product.metafields.custom.did_you_know_.value.icon_two_title.value }}",
+            "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_two_desc1 | metafield_tag }}<\/p>"
+          }
+        },
+        "feature_block_TJnKeb": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "{{ product.metafields.custom.did_you_know_.value.icon_three.value }}",
+            "title": "{{ product.metafields.custom.did_you_know_.value.icon_three_title.value }}",
+            "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_three_desc1 | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_block_r9ba6d",
+        "feature_block_LtbTmg",
+        "feature_block_TJnKeb"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "title": "Did you Know",
+        "description": "{{ product.metafields.custom.did_you_know_.value.description.value }}",
+        "secendory-title": "{{ product.metafields.custom.did_you_know_.value.secondory_title.value }}",
+        "alignment": "center",
+        "icon-size": 70,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "heading_size": "h1"
+      }
+    },
+    "vedio_icons_product_page_bXHm8N": {
+      "type": "vedio-icons-product-page",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/p1ERK1FETn8?feature=shared",
+        "cover_image": "shopify:\/\/shop_images\/FP7A5456.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "A Boon From Nature's Treasure",
+        "sub-description": "Our Hallikar Cow Ghee is made from the A2 milk of Desi Hallikar cows from Karnataka using the ancient Bilona-churning method, keeping it rich in essential nutrients.",
+        "icon1": "shopify:\/\/shop_images\/natural_2.png",
+        "title1": "Natural Wellness",
+        "subtitle1": "",
+        "icon2": "shopify:\/\/shop_images\/nature-product_1.png",
+        "title2": "Purely Organic",
+        "subtitle2": "",
+        "icon3": "shopify:\/\/shop_images\/free.png",
+        "title3": "Preservatives Free",
+        "subtitle3": ""
+      }
+    },
+    "image_banner_bNBXiU": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_Desktop_Size.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multicolumn_TrFxBj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qX6kQF": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_Mobile_View.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GTLnPr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6bUiiF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wEeNjp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_3.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HL6nNq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_4.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DRqr7K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_5.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_qX6kQF",
+        "column_GTLnPr",
+        "column_6bUiiF",
+        "column_wEeNjp",
+        "column_HL6nNq",
+        "column_DRqr7K"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_grid_new_Rkn9id": {
+      "type": "image-grid-new",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/3_3.png",
+        "image2": "shopify:\/\/shop_images\/3_1.png",
+        "image3": "shopify:\/\/shop_images\/3_2.png",
+        "image4": "shopify:\/\/shop_images\/3_3.png"
+      }
+    },
+    "collapsible_content_FR4NLm": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_9tQiTV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_1.value }}",
+            "icon": "none",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_1.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HRkLaX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_2.value }}",
+            "icon": "none",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_2.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_L9zznV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_3.value }}",
+            "icon": "none",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_3.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FMjnzd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_faq_s.value.question_4.value }}",
+            "icon": "none",
+            "row_content": "<p>{{ product.metafields.custom.product_faq_s.value.ans_4.value }}<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_9tQiTV",
+        "collapsible_row_HRkLaX",
+        "collapsible_row_L9zznV",
+        "collapsible_row_FMjnzd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "{{ product.metafields.custom.product_faq_s.value.section_title.value }}",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Recommended Products",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 32,
+        "padding_bottom": 64
+      }
+    },
+    "product_collage_QCfGwM": {
+      "type": "product-collage",
+      "settings": {
+        "title": "Product Collage"
+      }
+    },
+    "1713504574ec0b922c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_3eHtwr": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_3eHtwr"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "why_choose_us_kpmkYb": {
+      "type": "why-choose-us",
+      "blocks": {
+        "feature_block_AtWpRn": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/499479-200-helth.png",
+            "title": "Health Outcomes",
+            "description": "Ayurvedic solutions delivered thoughtfully"
+          }
+        },
+        "feature_block_b3fXUa": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/ayurvedic_1.png",
+            "title": "Bespoke Ayurveda",
+            "description": "Programs crafted by Ayurvedacharayas"
+          }
+        },
+        "feature_block_6KJq9t": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/pngtree-flat-icon-for-customer-support-a-symbol-for-social-assistance-vector-png-image_12754404_1.png",
+            "title": "Real Assistance",
+            "description": "Ayurvedic Health Experts"
+          }
+        },
+        "feature_block_zXzYDb": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/natural_100x_1.png",
+            "title": "Natural Ingredients",
+            "description": "Carefully handpicked and sourced"
+          }
+        }
+      },
+      "block_order": [
+        "feature_block_AtWpRn",
+        "feature_block_b3fXUa",
+        "feature_block_6KJq9t",
+        "feature_block_zXzYDb"
+      ],
+      "settings": {
+        "title": "Why Gavyamart",
+        "alignment": "center",
+        "heading_size": "h1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "tabbed_description_mqpWmh",
+    "did_you_know_XcKRqg",
+    "vedio_icons_product_page_bXHm8N",
+    "image_banner_bNBXiU",
+    "multicolumn_TrFxBj",
+    "image_grid_new_Rkn9id",
+    "collapsible_content_FR4NLm",
+    "related-products",
+    "product_collage_QCfGwM",
+    "1713504574ec0b922c",
+    "why_choose_us_kpmkYb"
+  ]
+}
