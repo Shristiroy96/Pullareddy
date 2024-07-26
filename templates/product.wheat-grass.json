@@ -340,7 +340,7 @@
     "image_grid_new_Rkn9id": {
       "type": "image-grid-new",
       "settings": {
-        "image1": "shopify:\/\/shop_images\/1_Mobile_View_523c99e8-9232-4e89-8428-671ce2ff3643.png",
+        "image1": "{{ product.metafields.custom.image_grid.value.image_9.value }}",
         "image2": "{{ product.metafields.custom.image_grid.value.image_7.value }}",
         "image3": "{{ product.metafields.custom.image_grid.value.image_8.value }}",
         "image4": "{{ product.metafields.custom.image_grid.value.image_9.value }}"
