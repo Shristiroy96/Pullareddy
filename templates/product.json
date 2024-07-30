@@ -161,6 +161,7 @@
       "blocks": {
         "feature_block_r9ba6d": {
           "type": "feature_block",
+          "disabled": true,
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_one.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_one_title.value }}",
@@ -169,6 +170,7 @@
         },
         "feature_block_LtbTmg": {
           "type": "feature_block",
+          "disabled": true,
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_two.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_two_title.value }}",
@@ -177,6 +179,7 @@
         },
         "feature_block_TJnKeb": {
           "type": "feature_block",
+          "disabled": true,
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_three.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_three_title.value }}",
