@@ -169,6 +169,13 @@
             "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_one_desc1 | metafield_tag }}<\/p>"
           }
         },
+        "feature_block_gX3qj7": {
+          "type": "feature_block",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        },
         "feature_block_LtbTmg": {
           "type": "feature_block",
           "disabled": true,
@@ -190,6 +197,7 @@
       },
       "block_order": [
         "feature_block_r9ba6d",
+        "feature_block_gX3qj7",
         "feature_block_LtbTmg",
         "feature_block_TJnKeb"
       ],
@@ -200,8 +208,8 @@
         "secendory-title": "{{ product.metafields.custom.did_you_know_.value.secondory_title.value }}",
         "alignment": "center",
         "icon-size": 70,
-        "padding_top": 16,
-        "padding_bottom": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "heading_size": "h1"
       }
     },
