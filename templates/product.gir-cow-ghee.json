@@ -162,6 +162,7 @@
       "blocks": {
         "feature_block_r9ba6d": {
           "type": "feature_block",
+          "disabled": true,
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_one.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_one_title.value }}",
@@ -170,6 +171,7 @@
         },
         "feature_block_LtbTmg": {
           "type": "feature_block",
+          "disabled": true,
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_two.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_two_title.value }}",
@@ -178,17 +180,26 @@
         },
         "feature_block_TJnKeb": {
           "type": "feature_block",
+          "disabled": true,
           "settings": {
             "icon": "{{ product.metafields.custom.did_you_know_.value.icon_three.value }}",
             "title": "{{ product.metafields.custom.did_you_know_.value.icon_three_title.value }}",
             "description": "<p>{{ product.metafields.custom.did_you_know_.value.icon_three_desc1 | metafield_tag }}<\/p>"
+          }
+        },
+        "feature_block_jGtE7z": {
+          "type": "feature_block",
+          "settings": {
+            "title": "",
+            "description": ""
           }
         }
       },
       "block_order": [
         "feature_block_r9ba6d",
         "feature_block_LtbTmg",
-        "feature_block_TJnKeb"
+        "feature_block_TJnKeb",
+        "feature_block_jGtE7z"
       ],
       "settings": {
         "color_scheme": "scheme-5",
