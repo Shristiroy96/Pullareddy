@@ -9,7 +9,7 @@
 */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Gavya-min.png",
+    "logo": "shopify:\/\/shop_images\/GPR_Logo_png.webp",
     "logo_width": 90,
     "favicon": "shopify:\/\/shop_images\/Gavya-fevicon.png",
     "type_header_font": "roboto_n4",
@@ -193,13 +193,13 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#5ecc62",
+          "background": "#b6312c",
           "background_gradient": "",
           "text": "#000000",
-          "button": "#00ad45",
-          "button_label": "#f9e547",
-          "secondary_button_label": "#3d081b",
-          "shadow": "#3d081b"
+          "button": "#b6312c",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#b6312c",
+          "shadow": "#b6312c"
         }
       },
       "scheme-ffa20d57-d766-4de6-a343-1bae8d1adb78": {
