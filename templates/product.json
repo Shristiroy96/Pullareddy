@@ -150,6 +150,7 @@
         "feature_block_gX3qj7",
         "feature_block_TJnKeb"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-5",
         "title": "Did you Know",
@@ -168,7 +169,7 @@
         "heading": "",
         "heading_size": "h2",
         "enable_video_looping": false,
-        "video_url": "https:\/\/youtu.be\/p1ERK1FETn8?feature=shared",
+        "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-1",
