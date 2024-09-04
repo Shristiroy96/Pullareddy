@@ -108,7 +108,7 @@
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-1",
     "brand_headline": "About Us",
-    "brand_description": "<p>We are a group of young men and women on a mission to bring a revolution called 'Pathmeda Godham' in this world. We have taken a vow in the name of our beloved Gau Mata that we devote every single breath to her seva and not rest till her pride as 'the mother' of humanity is restored.<\/p>",
+    "brand_description": "<p>With a legacy that dates back to the 1948s and a heritage that is both symbolic of<br\/>his vision and a result of the undying passion towards his craft, we are a<br\/>traditional brand known for our values and our ethics that emanate from<br\/>everything we do. Our sweets are always reminiscent of a simpler and purer time<br\/>and have an effect of filling our customers with nostalgia and transporting them<br\/>to a day and age that they hold in high regard.<\/p>",
     "brand_image_width": 100,
     "social_facebook_link": "https:\/\/www.facebook.com\/loveforgomata\/",
     "social_instagram_link": "",
@@ -146,14 +146,6 @@
     "content_for_index": [
 
     ],
-    "blocks": {
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
