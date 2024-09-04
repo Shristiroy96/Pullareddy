@@ -15,7 +15,6 @@
         "slide-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BILONA_A2_GHEE-01-01.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -33,7 +32,6 @@
         "slide_e9FPpA": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CHYAWANPRASH-01.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -51,7 +49,6 @@
         "slide_UwtNVR": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HAVAN_CUP-03.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -69,7 +66,6 @@
         "slide_EYWUQ9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jaggery_powder-01-01.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -87,7 +83,6 @@
         "slide_Q4CfPq": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled-2-01.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
@@ -202,14 +197,14 @@
         "heading_y3BGmK": {
           "type": "heading",
           "settings": {
-            "heading": "WE ARE GOSEVAK BY CHOICE",
+            "heading": "Title for the section",
             "heading_size": "h2"
           }
         },
         "text_8mj6TE": {
           "type": "text",
           "settings": {
-            "text": "<p>We are Gosevak. Our Organic Farm and beautiful Goshala is located in Sherpura village of Banaskantha in Gujarat. Our work is inspired by Holy Sant Shree “Pathmeda Maharaj ji” From worlds largest Pathmeda Godham. Every time you buy from us, you help a Cow to feed well and prompt rural livelihood of our village.<\/p>"
+            "text": "<p>Information to be highlighted in the section<\/p>"
           }
         },
         "button_gWBBcm": {
@@ -277,7 +272,6 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/A2_Bilona_Ghee_Subscription.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
@@ -293,13 +287,7 @@
     "product_collage_zWJQDF": {
       "type": "product-collage",
       "settings": {
-        "title": "Product Collage",
-        "image1": "shopify:\/\/shop_images\/A2BilonaGheeSubscription.jpg",
-        "image2": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-06_at_18.11.24_156dacaf.jpg",
-        "image3": "shopify:\/\/shop_images\/9.webp",
-        "image4": "shopify:\/\/shop_images\/FP7A5456.png",
-        "image5": "shopify:\/\/shop_images\/6.webp",
-        "image6": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-16_at_14.57.51_a3c65606.png"
+        "title": "Product Collage"
       }
     },
     "collage_6ETb84": {
@@ -382,7 +370,6 @@
         "button_GhcYM9"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/181023705_1503592393311074_1835482166389363772_n.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -439,7 +426,6 @@
         "button_hihT6a"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/FP7A5456.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -460,7 +446,6 @@
         "column_LgL4Wf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FP7A5441.png",
             "title": "MY SWEET EXPERIENCE WITH BILONA",
             "text": "<p>The combination is exclusive to the traditional ghee because of their exclusive curdling process.gavyamart has launched bilona ghee which is 100% organic and good for the body.<\/p><p><\/p>",
             "link_label": "",
@@ -470,7 +455,6 @@
         "column_MjjTf3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FP7A5475.png",
             "title": "MY FOOD EXPERINECE WITH BILONA",
             "text": "<p>Bilona Ghee not only adds taste to your food, but it makes your foodappraised. Gavyamart has rich nutty flavour of bilona ghee in their products. There are diacetyl and other flavonoid compounds which generate while heating.<\/p><p><\/p>",
             "link_label": "",
@@ -480,7 +464,6 @@
         "column_wErbB9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FP7A5491.png",
             "title": "MY PREGNANCY LIFE WITH BILONA",
             "text": "<p>A pregnant woman should consume pure and organic bilona ghee, Gavyamart provides nutritious, easy to digest, healing oil that can be used as food or as medicine ghee. During this crucial time of her life, she must only eat organic desi cow ghee made using the ayurvedic bilona ghee.<\/p>",
             "link_label": "",
