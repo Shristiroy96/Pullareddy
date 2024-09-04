@@ -15,6 +15,7 @@
         "slide-0": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Namkeen-Web-Banner-copy-2.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -32,6 +33,7 @@
         "slide_e9FPpA": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Sweets-Web-Banner-copy-4.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -49,6 +51,7 @@
         "slide_UwtNVR": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Free-Shipping-Web-banner-copy-4.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -66,6 +69,7 @@
         "slide_EYWUQ9": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/International-Web-Banner-copy-4.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
