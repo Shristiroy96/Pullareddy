@@ -334,7 +334,7 @@
         "caption_LJBKth": {
           "type": "caption",
           "settings": {
-            "caption": "WHAT IS PANCHGAVYA",
+            "caption": "Caption of the section",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -342,14 +342,14 @@
         "heading_8KEzfr": {
           "type": "heading",
           "settings": {
-            "heading": "BENEFITS OF PANCHGAVYA",
+            "heading": "Header of the section",
             "heading_size": "h2"
           }
         },
         "text_9mmYaw": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Panchgavya is a unite of five glorious elements from Mother Cow. COW URINE, COW DUNG, COW MILK, COW CURD and COW GHEE.<\/strong><\/p><p>Consumption of Panchgavya on regular bases removes toxins from our body, miraculous healing of food addictions, it cures from side effects of Alcohol & Tobacco etc. Ghee, Curd helps to improve immune system.<\/p>",
+            "text": "<p><strong>Content to be highlighted..................<\/strong><\/p>",
             "text_style": "body"
           }
         },
@@ -390,7 +390,7 @@
         "caption_tEhXDr": {
           "type": "caption",
           "settings": {
-            "caption": "GHEE MADE FROM YOGHURT (CURD)",
+            "caption": "Caption",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -398,14 +398,14 @@
         "heading_GEpfeE": {
           "type": "heading",
           "settings": {
-            "heading": "WHY SHOULD YOU BUY THE GAVYAMART BILONA GHEE?",
+            "heading": "Header of the section",
             "heading_size": "h2"
           }
         },
         "text_mbmnRA": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Pure Kakrej Cows Bilona Ghee made from A2 milk from our own Kakrej cows which are free grazed on the organic farm.<\/p>",
+            "text": "<p><strong>Content to be highlighted..................<\/strong><\/p>",
             "text_style": "body"
           }
         },
@@ -446,8 +446,8 @@
         "column_LgL4Wf": {
           "type": "column",
           "settings": {
-            "title": "MY SWEET EXPERIENCE WITH BILONA",
-            "text": "<p>The combination is exclusive to the traditional ghee because of their exclusive curdling process.gavyamart has launched bilona ghee which is 100% organic and good for the body.<\/p><p><\/p>",
+            "title": "Title",
+            "text": "<p>Content<\/p><p>Content<\/p><p>Content<\/p><p>Conent<\/p><p><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -455,8 +455,8 @@
         "column_MjjTf3": {
           "type": "column",
           "settings": {
-            "title": "MY FOOD EXPERINECE WITH BILONA",
-            "text": "<p>Bilona Ghee not only adds taste to your food, but it makes your foodappraised. Gavyamart has rich nutty flavour of bilona ghee in their products. There are diacetyl and other flavonoid compounds which generate while heating.<\/p><p><\/p>",
+            "title": "Title",
+            "text": "<p>Content<\/p><p><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -464,8 +464,8 @@
         "column_wErbB9": {
           "type": "column",
           "settings": {
-            "title": "MY PREGNANCY LIFE WITH BILONA",
-            "text": "<p>A pregnant woman should consume pure and organic bilona ghee, Gavyamart provides nutritious, easy to digest, healing oil that can be used as food or as medicine ghee. During this crucial time of her life, she must only eat organic desi cow ghee made using the ayurvedic bilona ghee.<\/p>",
+            "title": "Title",
+            "text": "<p>Content<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -477,7 +477,7 @@
         "column_wErbB9"
       ],
       "settings": {
-        "title": "MY HEALTH IS MY WEALTH",
+        "title": "Header to highlight desired content with slider",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "square",
