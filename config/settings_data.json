@@ -149,13 +149,13 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#fefae9",
           "background_gradient": "",
           "text": "#000000",
-          "button": "#248a26",
+          "button": "#b6312c",
           "button_label": "#f2efdd",
-          "secondary_button_label": "#248a26",
-          "shadow": "#3d081b"
+          "secondary_button_label": "#b6312c",
+          "shadow": "#b6312c"
         }
       },
       "scheme-2": {
