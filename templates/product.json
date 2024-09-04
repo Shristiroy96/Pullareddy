@@ -105,7 +105,7 @@
           "type": "text",
           "settings": {
             "title": "Features ",
-            "content": "<p><strong>Strengthens immunity and helps in bone development:<\/strong> As kids, we were given a spoonful of desi ghee daily to boost our immunity and make our bones strong. Desi ghee acts as a strong microbial, anti-cancer and antiviral agent. It is a rich source of fat soluble vitamins that help in growth and development of the bones. <\/p><p><br\/><strong>Good for your heart:<\/strong> Vitamin K2 found in desi ghee helps in preventing calcium deposits in the arteries that can lead to blockages and obstruct blood flow. It lowers bad cholesterol levels and increases good cholesterol levels, thus maintaining a healthy balance.<\/p><p><br\/><strong>Packed with Fat-Soluble Vitamins:<\/strong> Adding a few servings of ghee into your day is an excellent way to squeeze in some extra fat-soluble vitamins. Ghee can help boost your intake of vitamin A, vitamin E and vitamin K, all important nutrients that play a role in everything from maintaining healthy vision to keeping your skin glowing.<\/p><p><br\/><strong>Free of Lactose and Casein:<\/strong> One of the best ghee benefits is that it’s free of lactose and casein protein. Some individuals have a milk allergy, which may stem from a heightened sensitivity to casein, and others may be hypersensitive to lactose. For individuals with a casein allergy, the reaction may include swelling of lips, mouth, tongue, face or throat; hives; or congestion. People who are suffering from lactose sensitivity can use Bilona ghee which can meet your daily need.<\/p><p><br\/><strong>Contains Conjugated Linoleic Acid:<\/strong> Ghee is jam-packed with conjugated linoleic acid (CLA), a fatty acid associated with a long list of health benefits. Some studies have found that CLA may be effective in reducing body fat, preventing cancer formation, alleviating inflammation and even lowering blood pressure. Keep in mind that grass-fed dairy provides a higher concentration of this important fatty acid.<\/p>"
+            "content": "<p>Highlight\/ add data for the product<\/p>"
           }
         }
       },
@@ -169,7 +169,6 @@
         "heading_size": "h2",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/p1ERK1FETn8?feature=shared",
-        "cover_image": "shopify:\/\/shop_images\/FP7A5456.png",
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-1",
@@ -191,7 +190,8 @@
         "collapsible_row_FMjnzd": {
           "type": "collapsible_row",
           "settings": {
-            "heading": " ",
+            "heading": "",
+            "icon": "check_mark",
             "row_content": "<p> <\/p>",
             "page": ""
           }
@@ -202,7 +202,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": " ",
+        "heading": "",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
@@ -237,13 +237,7 @@
       "type": "product-collage",
       "disabled": true,
       "settings": {
-        "title": "Product Collage",
-        "image1": "shopify:\/\/shop_images\/PathmedaGauPremDhoopbati01_1.png",
-        "image2": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-06_at_18.11.24_156dacaf.jpg",
-        "image3": "shopify:\/\/shop_images\/WhatsAppImage2022-05-19at12.59.08PM.jpg",
-        "image4": "shopify:\/\/shop_images\/WhatsAppImage2023-09-20at4.50.17PM.jpg",
-        "image5": "shopify:\/\/shop_images\/9.webp",
-        "image6": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-16_at_14.57.51_a3c65606.png"
+        "title": "Product Collage"
       }
     },
     "1713504574ec0b922c": {
