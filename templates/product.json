@@ -253,29 +253,29 @@
         "feature_block_AtWpRn": {
           "type": "feature_block",
           "settings": {
-            "title": "Health Outcomes",
-            "description": "Ayurvedic solutions delivered thoughtfully"
+            "title": "Reason 1",
+            "description": "Content of the Reason"
           }
         },
         "feature_block_b3fXUa": {
           "type": "feature_block",
           "settings": {
-            "title": "Bespoke Ayurveda",
-            "description": "Programs crafted by Ayurvedacharayas"
+            "title": "Reason 2",
+            "description": "Content of the Reason"
           }
         },
         "feature_block_6KJq9t": {
           "type": "feature_block",
           "settings": {
-            "title": "Real Assistance",
-            "description": "Ayurvedic Health Experts"
+            "title": "Reason 3",
+            "description": "Content of the Reason"
           }
         },
         "feature_block_zXzYDb": {
           "type": "feature_block",
           "settings": {
-            "title": "Natural Ingredients",
-            "description": "Carefully handpicked and sourced"
+            "title": "Reason 4",
+            "description": "Content of the Reason"
           }
         }
       },
@@ -286,7 +286,7 @@
         "feature_block_zXzYDb"
       ],
       "settings": {
-        "title": "Why Gavyamart",
+        "title": "Why Brand?",
         "alignment": "center",
         "heading_size": "h1"
       }
