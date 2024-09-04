@@ -86,6 +86,7 @@
         },
         "slide_Q4CfPq": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "heading": "",
             "heading_size": "h2",
