@@ -109,6 +109,7 @@
         },
         "text_dADHzD": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Features ",
             "content": "<p>Highlight\/ add data for the product<\/p>"
@@ -263,26 +264,38 @@
         "feature_block_AtWpRn": {
           "type": "feature_block",
           "settings": {
-            "title": "Reason 1",
-            "description": "Content of the Reason"
+            "icon": "shopify:\/\/shop_images\/DSC04066-scaled.webp",
+            "title": "",
+            "description": ""
           }
         },
         "feature_block_b3fXUa": {
           "type": "feature_block",
           "settings": {
-            "title": "Reason 2",
-            "description": "Content of the Reason"
+            "icon": "shopify:\/\/shop_images\/DSC03990-scaled.webp",
+            "title": "",
+            "description": ""
           }
         },
         "feature_block_6KJq9t": {
           "type": "feature_block",
           "settings": {
-            "title": "Reason 3",
-            "description": "Content of the Reason"
+            "icon": "shopify:\/\/shop_images\/3H7A0350-scaled.png",
+            "title": "",
+            "description": ""
+          }
+        },
+        "feature_block_CXmVVr": {
+          "type": "feature_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/DSC03973-scaled.png",
+            "title": "",
+            "description": ""
           }
         },
         "feature_block_zXzYDb": {
           "type": "feature_block",
+          "disabled": true,
           "settings": {
             "title": "Reason 4",
             "description": "Content of the Reason"
@@ -293,6 +306,7 @@
         "feature_block_AtWpRn",
         "feature_block_b3fXUa",
         "feature_block_6KJq9t",
+        "feature_block_CXmVVr",
         "feature_block_zXzYDb"
       ],
       "settings": {
