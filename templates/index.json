@@ -339,7 +339,7 @@
         "caption_LJBKth": {
           "type": "caption",
           "settings": {
-            "caption": "Caption of the section",
+            "caption": "# Our Sweet Traditions",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -347,14 +347,14 @@
         "heading_8KEzfr": {
           "type": "heading",
           "settings": {
-            "heading": "Header of the section",
+            "heading": "Traditional",
             "heading_size": "h2"
           }
         },
         "text_9mmYaw": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Content to be highlighted..................<\/strong><\/p>",
+            "text": "<p>From humble beginnings in a small town to a beloved household name, We have been crafting traditional Indian delicacies with love and expertise for generations. Each sweet tells a story of heritage, flavor, and sweet memories shared across families.<\/p>",
             "text_style": "body"
           }
         },
@@ -375,14 +375,15 @@
         "button_GhcYM9"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-5",
+        "color_scheme": "scheme-5",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
