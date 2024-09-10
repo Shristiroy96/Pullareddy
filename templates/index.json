@@ -396,7 +396,7 @@
         "caption_tEhXDr": {
           "type": "caption",
           "settings": {
-            "caption": "Caption",
+            "caption": "# Our Sweet Traditions",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -404,14 +404,14 @@
         "heading_GEpfeE": {
           "type": "heading",
           "settings": {
-            "heading": "Header of the section",
+            "heading": "Purity",
             "heading_size": "h2"
           }
         },
         "text_mbmnRA": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Content to be highlighted..................<\/strong><\/p>",
+            "text": "<p>Crafted with purity and tradition, our sweets are made with our finest cattle ghee, ensuring each bite is a taste of pure bliss.<\/p>",
             "text_style": "body"
           }
         },
@@ -432,14 +432,15 @@
         "button_hihT6a"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/1.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-5",
+        "color_scheme": "scheme-5",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
