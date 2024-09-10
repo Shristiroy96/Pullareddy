@@ -434,8 +434,65 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/1.webp",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-5",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_3e3UFd": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_zerA7M": {
+          "type": "caption",
+          "settings": {
+            "caption": "# Our Sweet Traditions",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_FWct3a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Social Responsibility",
+            "heading_size": "h2"
+          }
+        },
+        "text_jmWrcC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We not only delighted taste buds but also nurtured minds. By establishing schools and colleges for students, we embody a commitment to uplift the community and pave the way for a brighter future.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_aUp6dg": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_zerA7M",
+        "heading_FWct3a",
+        "text_jmWrcC",
+        "button_aUp6dg"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -528,6 +585,7 @@
     "collage_6ETb84",
     "image_with_text_LqEcbB",
     "image_with_text_zFyqFV",
+    "image_with_text_3e3UFd",
     "multicolumn_4nxrQK",
     "featured_blog_aqHBCw"
   ]
