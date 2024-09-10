@@ -519,6 +519,7 @@
         },
         "column_MjjTf3": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Title",
             "text": "<p>Content<\/p><p><\/p>",
@@ -528,6 +529,7 @@
         },
         "column_wErbB9": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Title",
             "text": "<p>Content<\/p>",
