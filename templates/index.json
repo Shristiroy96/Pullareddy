@@ -510,8 +510,9 @@
         "column_LgL4Wf": {
           "type": "column",
           "settings": {
-            "title": "Title",
-            "text": "<p>Content<\/p><p>Content<\/p><p>Content<\/p><p>Conent<\/p><p><\/p>",
+            "image": "shopify:\/\/shop_images\/G-tin-box_png.png",
+            "title": "<strong> #SweetMemories<\/strong>",
+            "text": "<p>“Rooted in our sweet traditions, we draw inspiration from the cherished practices of our ancestors. Just as they valued togetherness and the joy of shared meals, we strive to recreate that sense of connection through our delectable creations. G. Pulla Reddy Garu envisioned a world where everyone could experience the simple pleasure of savoring sweet delights. Indulge in the rich and authentic flavors of G. Pulla Reddy Sweets – a beloved name renowned for traditional Indian sweets, savories, and pickles. Let each bite be a delightful journey back to the warmth and love of home. <\/p><p><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -541,7 +542,7 @@
         "column_wErbB9"
       ],
       "settings": {
-        "title": "Header to highlight desired content with slider",
+        "title": "The Warmth of Home",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "square",
